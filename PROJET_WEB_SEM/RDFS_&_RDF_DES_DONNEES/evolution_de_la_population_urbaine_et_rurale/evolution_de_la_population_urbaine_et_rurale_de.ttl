@@ -1,0 +1,319 @@
+@prefix : <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale> .
+
+<http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#aPourAnnee
+:aPourAnnee rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Population ;
+            rdfs:range :Annee .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#aPourLocalite
+:aPourLocalite rdf:type owl:ObjectProperty ;
+               rdfs:domain :Population ;
+               rdfs:range :Localite .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#localite
+:localite rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Localite ;
+          rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#nombrePopulation
+:nombrePopulation rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :Population .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#valeurAnnee
+:valeurAnnee rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Annee ;
+             rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#Annee
+:Annee rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#Localite
+:Localite rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#Population
+:Population rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#Rural
+:Rural rdf:type owl:NamedIndividual ,
+                :Localite ;
+       :localite "Rurale"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#Urbain
+:Urbain rdf:type owl:NamedIndividual ,
+                 :Localite ;
+        :localite "Urbaine"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popRural06
+:popRural06 rdf:type owl:NamedIndividual ,
+                     :Population ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2006> ;
+            :aPourLocalite :Rural ;
+            :nombrePopulation 10835 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popRural07
+:popRural07 rdf:type owl:NamedIndividual ,
+                     :Population ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2007> ;
+            :aPourLocalite :Rural ;
+            :nombrePopulation 10930 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popRural08
+:popRural08 rdf:type owl:NamedIndividual ,
+                     :Population ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2008> ;
+            :aPourLocalite :Rural ;
+            :nombrePopulation 11405 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popRural09
+:popRural09 rdf:type owl:NamedIndividual ,
+                     :Population ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2009> ;
+            :aPourLocalite :Rural ;
+            :nombrePopulation 11667 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popRural10
+:popRural10 rdf:type owl:NamedIndividual ,
+                     :Population ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2010> ;
+            :aPourLocalite :Rural ;
+            :nombrePopulation 11931 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popRural11
+:popRural11 rdf:type owl:NamedIndividual ,
+                     :Population ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2011> ;
+            :aPourLocalite :Rural ;
+            :nombrePopulation 12176 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popRural12
+:popRural12 rdf:type owl:NamedIndividual ,
+                     :Population ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2012> ;
+            :aPourLocalite :Rural ;
+            :nombrePopulation 12465 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popRural13
+:popRural13 rdf:type owl:NamedIndividual ,
+                     :Population ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2013> ;
+            :aPourLocalite :Rural ;
+            :nombrePopulation 12799 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popRural14
+:popRural14 rdf:type owl:NamedIndividual ,
+                     :Population ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2014> ;
+            :aPourLocalite :Rural ;
+            :nombrePopulation 13085 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popRural15
+:popRural15 rdf:type owl:NamedIndividual ,
+                     :Population ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2015> ;
+            :aPourLocalite :Rural ;
+            :nombrePopulation 13371 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popUrbain06
+:popUrbain06 rdf:type owl:NamedIndividual ,
+                      :Population ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2006> ;
+             :aPourLocalite :Urbain ;
+             :nombrePopulation 3182 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popUrbain07
+:popUrbain07 rdf:type owl:NamedIndividual ,
+                      :Population ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2007> ;
+             :aPourLocalite :Urbain ;
+             :nombrePopulation 3322 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popUrbain08
+:popUrbain08 rdf:type owl:NamedIndividual ,
+                      :Population ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2008> ;
+             :aPourLocalite :Urbain ;
+             :nombrePopulation 3322 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popUrbain09
+:popUrbain09 rdf:type owl:NamedIndividual ,
+                      :Population ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2009> ;
+             :aPourLocalite :Urbain ;
+             :nombrePopulation 3546 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popUrbain10
+:popUrbain10 rdf:type owl:NamedIndividual ,
+                      :Population ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2010> ;
+             :aPourLocalite :Urbain ;
+             :nombrePopulation 3776 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popUrbain11
+:popUrbain11 rdf:type owl:NamedIndividual ,
+                      :Population ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2011> ;
+             :aPourLocalite :Urbain ;
+             :nombrePopulation 4010 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popUrbain12
+:popUrbain12 rdf:type owl:NamedIndividual ,
+                      :Population ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2012> ;
+             :aPourLocalite :Urbain ;
+             :nombrePopulation 4249 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popUrbain13
+:popUrbain13 rdf:type owl:NamedIndividual ,
+                      :Population ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2013> ;
+             :aPourLocalite :Urbain ;
+             :nombrePopulation 4524 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popUrbain14
+:popUrbain14 rdf:type owl:NamedIndividual ,
+                      :Population ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2014> ;
+             :aPourLocalite :Urbain ;
+             :nombrePopulation 4795 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#popUrbain15
+:popUrbain15 rdf:type owl:NamedIndividual ,
+                      :Population ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2015> ;
+             :aPourLocalite :Urbain ;
+             :nombrePopulation 5080 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2006
+<http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2006> rdf:type owl:NamedIndividual ,
+                                                                                :Annee ;
+                                                                       :valeurAnnee 2006 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2007
+<http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2007> rdf:type owl:NamedIndividual ,
+                                                                                :Annee ;
+                                                                       :valeurAnnee 2007 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2008
+<http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2008> rdf:type owl:NamedIndividual ,
+                                                                                :Annee ;
+                                                                       :valeurAnnee 2008 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2009
+<http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2009> rdf:type owl:NamedIndividual ,
+                                                                                :Annee ;
+                                                                       :valeurAnnee 2009 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2010
+<http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2010> rdf:type owl:NamedIndividual ,
+                                                                                :Annee ;
+                                                                       :valeurAnnee 2010 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2011
+<http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2011> rdf:type owl:NamedIndividual ,
+                                                                                :Annee ;
+                                                                       :valeurAnnee 2011 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2012
+<http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2012> rdf:type owl:NamedIndividual ,
+                                                                                :Annee ;
+                                                                       :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2012> ;
+                                                                       :aPourLocalite :Rural ;
+                                                                       :nombrePopulation 12465 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2013
+<http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2013> rdf:type owl:NamedIndividual ,
+                                                                                :Annee ;
+                                                                       :valeurAnnee 2013 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2014
+<http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2014> rdf:type owl:NamedIndividual ,
+                                                                                :Annee ;
+                                                                       :valeurAnnee 2014 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2015
+<http://www.semanticweb.org/abou/pnpdo/evolutionPopUrbaineRurale#2015> rdf:type owl:NamedIndividual ,
+                                                                                :Annee ;
+                                                                       :valeurAnnee 2015 .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Annee
+                :Localite
+                :Population
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

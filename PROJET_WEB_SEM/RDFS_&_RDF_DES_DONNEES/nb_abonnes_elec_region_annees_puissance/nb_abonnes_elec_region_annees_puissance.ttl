@@ -1,0 +1,4968 @@
+@prefix : <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion> .
+
+<http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion> rdf:type owl:Ontology ;
+                                                           owl:versionIRI <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#aPourAnnee
+:aPourAnnee rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Tension ;
+            rdfs:label "aPourAnnee"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#aPourRegion
+:aPourRegion rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :Tension ;
+             rdfs:label "aPourRegion"@fr .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#labelTypeTension
+:labelTypeTension rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Tension ;
+                  rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#nomRegion
+:nomRegion rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:range rdfs:Literal ;
+           rdfs:label "nomRegion"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#nombreAbonnes
+:nombreAbonnes rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Tension ;
+               rdfs:range rdfs:Literal ,
+                          xsd:integer ;
+               rdfs:label "nombreAbonnees"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#valeurAnnee
+:valeurAnnee rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:range rdfs:Literal ,
+                        xsd:integer ;
+             rdfs:label "valeurAnnee"@fr .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#AlimentationFDE
+:AlimentationFDE rdf:type owl:Class ;
+                 rdfs:subClassOf :Tension ;
+                 rdfs:label "AlimentationFDE"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#Annee
+:Annee rdf:type owl:Class ;
+       rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BasseTension
+:BasseTension rdf:type owl:Class ;
+              rdfs:subClassOf :Tension ;
+              rdfs:label "BasseTension"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HauteTension
+:HauteTension rdf:type owl:Class ;
+              rdfs:subClassOf :Tension ;
+              rdfs:label "HauteTension"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#Tension
+:Tension rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing ;
+         rdfs:label "Tension"@fr .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTBoucleMouhoun2006
+:BTBoucleMouhoun2006 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 7820 ;
+	 rdfs:label "BTBoucleMouhoun2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTBoucleMouhoun2006
+:HTBoucleMouhoun2006 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 29 ;
+	 rdfs:label "HTBoucleMouhoun2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEBoucleMouhoun2006
+:FDEBoucleMouhoun2006 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDEBoucleMouhoun2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCascades2006
+:BTCascades2006 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 6637 ;
+	 rdfs:label "BTCascades2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCascades2006
+:HTCascades2006 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 10 ;
+	 rdfs:label "HTCascades2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECascades2006
+:FDECascades2006 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDECascades2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentre2006
+:BTCentre2006 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 166696 ;
+	 rdfs:label "BTCentre2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentre2006
+:HTCentre2006 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 454 ;
+	 rdfs:label "HTCentre2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentre2006
+:FDECentre2006 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 94 ;
+	 rdfs:label "FDECentre2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreEst2006
+:BTCentreEst2006 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 8771 ;
+	 rdfs:label "BTCentreEst2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreEst2006
+:HTCentreEst2006 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 17 ;
+	 rdfs:label "HTCentreEst2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreEst2006
+:FDECentreEst2006 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDECentreEst2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreNord2006
+:BTCentreNord2006 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 6253 ;
+	 rdfs:label "BTCentreNord2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreNord2006
+:HTCentreNord2006 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 19 ;
+	 rdfs:label "HTCentreNord2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreNord2006
+:FDECentreNord2006 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDECentreNord2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreOuest2006
+:BTCentreOuest2006 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 11037 ;
+	 rdfs:label "BTCentreOuest2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreOuest2006
+:HTCentreOuest2006 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 23 ;
+	 rdfs:label "HTCentreOuest2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreOuest2006
+:FDECentreOuest2006 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDECentreOuest2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreSud2006
+:BTCentreSud2006 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 2455 ;
+	 rdfs:label "BTCentreSud2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreSud2006
+:HTCentreSud2006 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 11 ;
+	 rdfs:label "HTCentreSud2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreSud2006
+:FDECentreSud2006 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDECentreSud2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTEst2006
+:BTEst2006 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 4595 ;
+	 rdfs:label "BTEst2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTEst2006
+:HTEst2006 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 23 ;
+	 rdfs:label "HTEst2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEEst2006
+:FDEEst2006 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 90 ;
+	 rdfs:label "FDEEst2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTHautsBassins2006
+:BTHautsBassins2006 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 50329 ;
+	 rdfs:label "BTHautsBassins2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTHautsBassins2006
+:HTHautsBassins2006 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 141 ;
+	 rdfs:label "HTHautsBassins2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEHautsBassins2006
+:FDEHautsBassins2006 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 95 ;
+	 rdfs:label "FDEHautsBassins2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTNord2006
+:BTNord2006 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 9257 ;
+	 rdfs:label "BTNord2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTNord2006
+:HTNord2006 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 29 ;
+	 rdfs:label "HTNord2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDENord2006
+:FDENord2006 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDENord2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTPlateauCentral2006
+:BTPlateauCentral2006 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 2130 ;
+	 rdfs:label "BTPlateauCentral2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTPlateauCentral2006
+:HTPlateauCentral2006 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 9 ;
+	 rdfs:label "HTPlateauCentral2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEPlateauCentral2006
+:FDEPlateauCentral2006 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 190 ;
+	 rdfs:label "FDEPlateauCentral2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSahel2006
+:BTSahel2006 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 3310 ;
+	 rdfs:label "BTSahel2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSahel2006
+:HTSahel2006 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 17 ;
+	 rdfs:label "HTSahel2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESahel2006
+:FDESahel2006 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 200 ;
+	 rdfs:label "FDESahel2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSudOuest2006
+:BTSudOuest2006 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 3821 ;
+	 rdfs:label "BTSudOuest2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSudOuest2006
+:HTSudOuest2006 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 15 ;
+	 rdfs:label "HTSudOuest2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESudOuest2006
+:FDESudOuest2006 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDESudOuest2006"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTBoucleMouhoun2007
+:BTBoucleMouhoun2007 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 9608 ;
+	 rdfs:label "BTBoucleMouhoun2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTBoucleMouhoun2007
+:HTBoucleMouhoun2007 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 30 ;
+	 rdfs:label "HTBoucleMouhoun2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEBoucleMouhoun2007
+:FDEBoucleMouhoun2007 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 250 ;
+	 rdfs:label "FDEBoucleMouhoun2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCascades2007
+:BTCascades2007 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 7258 ;
+	 rdfs:label "BTCascades2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCascades2007
+:HTCascades2007 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 10 ;
+	 rdfs:label "HTCascades2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECascades2007
+:FDECascades2007 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDECascades2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentre2007
+:BTCentre2007 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 152318 ;
+	 rdfs:label "BTCentre2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentre2007
+:HTCentre2007 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 467 ;
+	 rdfs:label "HTCentre2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentre2007
+:FDECentre2007 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 109 ;
+	 rdfs:label "FDECentre2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreEst2007
+:BTCentreEst2007 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 9950 ;
+	 rdfs:label "BTCentreEst2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreEst2007
+:HTCentreEst2007 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 20 ;
+	 rdfs:label "HTCentreEst2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreEst2007
+:FDECentreEst2007 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 200 ;
+	 rdfs:label "FDECentreEst2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreNord2007
+:BTCentreNord2007 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 7069 ;
+	 rdfs:label "BTCentreNord2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreNord2007
+:HTCentreNord2007 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 22 ;
+	 rdfs:label "HTCentreNord2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreNord2007
+:FDECentreNord2007 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDECentreNord2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreOuest2007
+:BTCentreOuest2007 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 14654 ;
+	 rdfs:label "BTCentreOuest2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreOuest2007
+:HTCentreOuest2007 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 25 ;
+	 rdfs:label "HTCentreOuest2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreOuest2007
+:FDECentreOuest2007 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 210 ;
+	 rdfs:label "FDECentreOuest2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreSud2007
+:BTCentreSud2007 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 2812 ;
+	 rdfs:label "BTCentreSud2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreSud2007
+:HTCentreSud2007 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 12 ;
+	 rdfs:label "HTCentreSud2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreSud2007
+:FDECentreSud2007 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDECentreSud2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTEst2007
+:BTEst2007 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 5252 ;
+	 rdfs:label "BTEst2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTEst2007
+:HTEst2007 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 28 ;
+	 rdfs:label "HTEst2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEEst2007
+:FDEEst2007 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 100 ;
+	 rdfs:label "FDEEst2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTHautsBassins2007
+:BTHautsBassins2007 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 57385 ;
+	 rdfs:label "BTHautsBassins2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTHautsBassins2007
+:HTHautsBassins2007 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 150 ;
+	 rdfs:label "HTHautsBassins2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEHautsBassins2007
+:FDEHautsBassins2007 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 110 ;
+	 rdfs:label "FDEHautsBassins2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTNord2007
+:BTNord2007 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 10279 ;
+	 rdfs:label "BTNord2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTNord2007
+:HTNord2007 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 33 ;
+	 rdfs:label "HTNord2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDENord2007
+:FDENord2007 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDENord2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTPlateauCentral2007
+:BTPlateauCentral2007 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 2467 ;
+	 rdfs:label "BTPlateauCentral2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTPlateauCentral2007
+:HTPlateauCentral2007 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 12 ;
+	 rdfs:label "HTPlateauCentral2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEPlateauCentral2007
+:FDEPlateauCentral2007 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 200 ;
+	 rdfs:label "FDEPlateauCentral2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSahel2007
+:BTSahel2007 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 3727 ;
+	 rdfs:label "BTSahel2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSahel2007
+:HTSahel2007 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 17 ;
+	 rdfs:label "HTSahel2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESahel2007
+:FDESahel2007 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 210 ;
+	 rdfs:label "FDESahel2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSudOuest2007
+:BTSudOuest2007 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 4881 ;
+	 rdfs:label "BTSudOuest2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSudOuest2007
+:HTSudOuest2007 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 16 ;
+	 rdfs:label "HTSudOuest2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESudOuest2007
+:FDESudOuest2007 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 150 ;
+	 rdfs:label "FDESudOuest2007"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTBoucleMouhoun2008
+:BTBoucleMouhoun2008 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 10528 ;
+	 rdfs:label "BTBoucleMouhoun2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTBoucleMouhoun2008
+:HTBoucleMouhoun2008 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 35 ;
+	 rdfs:label "HTBoucleMouhoun2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEBoucleMouhoun2008
+:FDEBoucleMouhoun2008 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 340 ;
+	 rdfs:label "FDEBoucleMouhoun2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCascades2008
+:BTCascades2008 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 7600 ;
+	 rdfs:label "BTCascades2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCascades2008
+:HTCascades2008 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 11 ;
+	 rdfs:label "HTCascades2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECascades2008
+:FDECascades2008 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 220 ;
+	 rdfs:label "FDECascades2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentre2008
+:BTCentre2008 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 121972 ;
+	 rdfs:label "BTCentre2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentre2008
+:HTCentre2008 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 494 ;
+	 rdfs:label "HTCentre2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentre2008
+:FDECentre2008 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 114 ;
+	 rdfs:label "FDECentre2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreEst2008
+:BTCentreEst2008 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 10737 ;
+	 rdfs:label "BTCentreEst2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreEst2008
+:HTCentreEst2008 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 20 ;
+	 rdfs:label "HTCentreEst2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreEst2008
+:FDECentreEst2008 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 450 ;
+	 rdfs:label "FDECentreEst2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreNord2008
+:BTCentreNord2008 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 7826 ;
+	 rdfs:label "BTCentreNord2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreNord2008
+:HTCentreNord2008 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 24 ;
+	 rdfs:label "HTCentreNord2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreNord2008
+:FDECentreNord2008 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDECentreNord2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreOuest2008
+:BTCentreOuest2008 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 14305 ;
+	 rdfs:label "BTCentreOuest2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreOuest2008
+:HTCentreOuest2008 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 27 ;
+	 rdfs:label "HTCentreOuest2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreOuest2008
+:FDECentreOuest2008 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 210 ;
+	 rdfs:label "FDECentreOuest2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreSud2008
+:BTCentreSud2008 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 2830 ;
+	 rdfs:label "BTCentreSud2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreSud2008
+:HTCentreSud2008 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 14 ;
+	 rdfs:label "HTCentreSud2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreSud2008
+:FDECentreSud2008 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDECentreSud2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTEst2008
+:BTEst2008 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 6026 ;
+	 rdfs:label "BTEst2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTEst2008
+:HTEst2008 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 34 ;
+	 rdfs:label "HTEst2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEEst2008
+:FDEEst2008 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 350 ;
+	 rdfs:label "FDEEst2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTHautsBassins2008
+:BTHautsBassins2008 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 56684 ;
+	 rdfs:label "BTHautsBassins2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTHautsBassins2008
+:HTHautsBassins2008 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 158 ;
+	 rdfs:label "HTHautsBassins2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEHautsBassins2008
+:FDEHautsBassins2008 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 110 ;
+	 rdfs:label "FDEHautsBassins2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTNord2008
+:BTNord2008 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 11510 ;
+	 rdfs:label "BTNord2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTNord2008
+:HTNord2008 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 39 ;
+	 rdfs:label "HTNord2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDENord2008
+:FDENord2008 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 110 ;
+	 rdfs:label "FDENord2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTPlateauCentral2008
+:BTPlateauCentral2008 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 3379 ;
+	 rdfs:label "BTPlateauCentral2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTPlateauCentral2008
+:HTPlateauCentral2008 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 20 ;
+	 rdfs:label "HTPlateauCentral2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEPlateauCentral2008
+:FDEPlateauCentral2008 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 460 ;
+	 rdfs:label "FDEPlateauCentral2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSahel2008
+:BTSahel2008 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 4109 ;
+	 rdfs:label "BTSahel2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSahel2008
+:HTSahel2008 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 16 ;
+	 rdfs:label "HTSahel2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESahel2008
+:FDESahel2008 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 250 ;
+	 rdfs:label "FDESahel2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSudOuest2008
+:BTSudOuest2008 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 4895 ;
+	 rdfs:label "BTSudOuest2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSudOuest2008
+:HTSudOuest2008 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 18 ;
+	 rdfs:label "HTSudOuest2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESudOuest2008
+:FDESudOuest2008 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 160 ;
+	 rdfs:label "FDESudOuest2008"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTBoucleMouhoun2009
+:BTBoucleMouhoun2009 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 11345 ;
+	 rdfs:label "BTBoucleMouhoun2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTBoucleMouhoun2009
+:HTBoucleMouhoun2009 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 39 ;
+	 rdfs:label "HTBoucleMouhoun2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEBoucleMouhoun2009
+:FDEBoucleMouhoun2009 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 800 ;
+	 rdfs:label "FDEBoucleMouhoun2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCascades2009
+:BTCascades2009 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 8221 ;
+	 rdfs:label "BTCascades2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCascades2009
+:HTCascades2009 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 14 ;
+	 rdfs:label "HTCascades2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECascades2009
+:FDECascades2009 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 350 ;
+	 rdfs:label "FDECascades2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentre2009
+:BTCentre2009 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 177320 ;
+	 rdfs:label "BTCentre2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentre2009
+:HTCentre2009 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 533 ;
+	 rdfs:label "HTCentre2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentre2009
+:FDECentre2009 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 144 ;
+	 rdfs:label "FDECentre2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreEst2009
+:BTCentreEst2009 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 12258 ;
+	 rdfs:label "BTCentreEst2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreEst2009
+:HTCentreEst2009 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 28 ;
+	 rdfs:label "HTCentreEst2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreEst2009
+:FDECentreEst2009 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 500 ;
+	 rdfs:label "FDECentreEst2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreNord2009
+:BTCentreNord2009 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 8647 ;
+	 rdfs:label "BTCentreNord2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreNord2009
+:HTCentreNord2009 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 25 ;
+	 rdfs:label "HTCentreNord2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreNord2009
+:FDECentreNord2009 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDECentreNord2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreOuest2009
+:BTCentreOuest2009 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 18494 ;
+	 rdfs:label "BTCentreOuest2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreOuest2009
+:HTCentreOuest2009 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 30 ;
+	 rdfs:label "HTCentreOuest2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreOuest2009
+:FDECentreOuest2009 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 300 ;
+	 rdfs:label "FDECentreOuest2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreSud2009
+:BTCentreSud2009 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 3313 ;
+	 rdfs:label "BTCentreSud2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreSud2009
+:HTCentreSud2009 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 16 ;
+	 rdfs:label "HTCentreSud2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreSud2009
+:FDECentreSud2009 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 200 ;
+	 rdfs:label "FDECentreSud2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTEst2009
+:BTEst2009 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 7144 ;
+	 rdfs:label "BTEst2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTEst2009
+:HTEst2009 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 38 ;
+	 rdfs:label "HTEst2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEEst2009
+:FDEEst2009 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 500 ;
+	 rdfs:label "FDEEst2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTHautsBassins2009
+:BTHautsBassins2009 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 63833 ;
+	 rdfs:label "BTHautsBassins2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTHautsBassins2009
+:HTHautsBassins2009 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 168 ;
+	 rdfs:label "HTHautsBassins2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEHautsBassins2009
+:FDEHautsBassins2009 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 150 ;
+	 rdfs:label "FDEHautsBassins2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTNord2009
+:BTNord2009 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 12538 ;
+	 rdfs:label "BTNord2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTNord2009
+:HTNord2009 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 67 ;
+	 rdfs:label "HTNord2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDENord2009
+:FDENord2009 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1400 ;
+	 rdfs:label "FDENord2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTPlateauCentral2009
+:BTPlateauCentral2009 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 4049 ;
+	 rdfs:label "BTPlateauCentral2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTPlateauCentral2009
+:HTPlateauCentral2009 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 20 ;
+	 rdfs:label "HTPlateauCentral2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEPlateauCentral2009
+:FDEPlateauCentral2009 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 700 ;
+	 rdfs:label "FDEPlateauCentral2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSahel2009
+:BTSahel2009 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 4744 ;
+	 rdfs:label "BTSahel2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSahel2009
+:HTSahel2009 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 20 ;
+	 rdfs:label "HTSahel2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESahel2009
+:FDESahel2009 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 250 ;
+	 rdfs:label "FDESahel2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSudOuest2009
+:BTSudOuest2009 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 5249 ;
+	 rdfs:label "BTSudOuest2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSudOuest2009
+:HTSudOuest2009 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 18 ;
+	 rdfs:label "HTSudOuest2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESudOuest2009
+:FDESudOuest2009 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 200 ;
+	 rdfs:label "FDESudOuest2009"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTBoucleMouhoun2010
+:BTBoucleMouhoun2010 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 11471 ;
+	 rdfs:label "BTBoucleMouhoun2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTBoucleMouhoun2010
+:HTBoucleMouhoun2010 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 41 ;
+	 rdfs:label "HTBoucleMouhoun2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEBoucleMouhoun2010
+:FDEBoucleMouhoun2010 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1400 ;
+	 rdfs:label "FDEBoucleMouhoun2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCascades2010
+:BTCascades2010 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 8712 ;
+	 rdfs:label "BTCascades2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCascades2010
+:HTCascades2010 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 16 ;
+	 rdfs:label "HTCascades2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECascades2010
+:FDECascades2010 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 500 ;
+	 rdfs:label "FDECascades2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentre2010
+:BTCentre2010 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 190422 ;
+	 rdfs:label "BTCentre2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentre2010
+:HTCentre2010 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 564 ;
+	 rdfs:label "HTCentre2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentre2010
+:FDECentre2010 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 233 ;
+	 rdfs:label "FDECentre2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreEst2010
+:BTCentreEst2010 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 13391 ;
+	 rdfs:label "BTCentreEst2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreEst2010
+:HTCentreEst2010 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 36 ;
+	 rdfs:label "HTCentreEst2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreEst2010
+:FDECentreEst2010 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1450 ;
+	 rdfs:label "FDECentreEst2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreNord2010
+:BTCentreNord2010 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 9783 ;
+	 rdfs:label "BTCentreNord2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreNord2010
+:HTCentreNord2010 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 27 ;
+	 rdfs:label "HTCentreNord2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreNord2010
+:FDECentreNord2010 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 0 ;
+	 rdfs:label "FDECentreNord2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreOuest2010
+:BTCentreOuest2010 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 18111 ;
+	 rdfs:label "BTCentreOuest2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreOuest2010
+:HTCentreOuest2010 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 36 ;
+	 rdfs:label "HTCentreOuest2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreOuest2010
+:FDECentreOuest2010 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 520 ;
+	 rdfs:label "FDECentreOuest2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreSud2010
+:BTCentreSud2010 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 3569 ;
+	 rdfs:label "BTCentreSud2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreSud2010
+:HTCentreSud2010 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 15 ;
+	 rdfs:label "HTCentreSud2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreSud2010
+:FDECentreSud2010 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 240 ;
+	 rdfs:label "FDECentreSud2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTEst2010
+:BTEst2010 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 8387 ;
+	 rdfs:label "BTEst2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTEst2010
+:HTEst2010 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 31 ;
+	 rdfs:label "HTEst2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEEst2010
+:FDEEst2010 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1200 ;
+	 rdfs:label "FDEEst2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTHautsBassins2010
+:BTHautsBassins2010 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 67501 ;
+	 rdfs:label "BTHautsBassins2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTHautsBassins2010
+:HTHautsBassins2010 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 174 ;
+	 rdfs:label "HTHautsBassins2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEHautsBassins2010
+:FDEHautsBassins2010 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 250 ;
+	 rdfs:label "FDEHautsBassins2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTNord2010
+:BTNord2010 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 13736 ;
+	 rdfs:label "BTNord2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTNord2010
+:HTNord2010 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 77 ;
+	 rdfs:label "HTNord2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDENord2010
+:FDENord2010 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 3000 ;
+	 rdfs:label "FDENord2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTPlateauCentral2010
+:BTPlateauCentral2010 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 4802 ;
+	 rdfs:label "BTPlateauCentral2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTPlateauCentral2010
+:HTPlateauCentral2010 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 14 ;
+	 rdfs:label "HTPlateauCentral2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEPlateauCentral2010
+:FDEPlateauCentral2010 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1500 ;
+	 rdfs:label "FDEPlateauCentral2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSahel2010
+:BTSahel2010 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 5378 ;
+	 rdfs:label "BTSahel2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSahel2010
+:HTSahel2010 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 19 ;
+	 rdfs:label "HTSahel2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESahel2010
+:FDESahel2010 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 450 ;
+	 rdfs:label "FDESahel2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSudOuest2010
+:BTSudOuest2010 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 5829 ;
+	 rdfs:label "BTSudOuest2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSudOuest2010
+:HTSudOuest2010 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 23 ;
+	 rdfs:label "HTSudOuest2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESudOuest2010
+:FDESudOuest2010 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 300 ;
+	 rdfs:label "FDESudOuest2010"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTBoucleMouhoun2011
+:BTBoucleMouhoun2011 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 14240 ;
+	 rdfs:label "BTBoucleMouhoun2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTBoucleMouhoun2011
+:HTBoucleMouhoun2011 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 57 ;
+	 rdfs:label "HTBoucleMouhoun2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEBoucleMouhoun2011
+:FDEBoucleMouhoun2011 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1200 ;
+	 rdfs:label "FDEBoucleMouhoun2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCascades2011
+:BTCascades2011 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 9688 ;
+	 rdfs:label "BTCascades2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCascades2011
+:HTCascades2011 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 17 ;
+	 rdfs:label "HTCascades2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECascades2011
+:FDECascades2011 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 400 ;
+	 rdfs:label "FDECascades2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentre2011
+:BTCentre2011 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 208055 ;
+	 rdfs:label "BTCentre2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentre2011
+:HTCentre2011 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 584 ;
+	 rdfs:label "HTCentre2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentre2011
+:FDECentre2011 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 350 ;
+	 rdfs:label "FDECentre2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreEst2011
+:BTCentreEst2011 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 15345 ;
+	 rdfs:label "BTCentreEst2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreEst2011
+:HTCentreEst2011 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 45 ;
+	 rdfs:label "HTCentreEst2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreEst2011
+:FDECentreEst2011 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2000 ;
+	 rdfs:label "FDECentreEst2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreNord2011
+:BTCentreNord2011 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 10360 ;
+	 rdfs:label "BTCentreNord2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreNord2011
+:HTCentreNord2011 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 25 ;
+	 rdfs:label "HTCentreNord2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreNord2011
+:FDECentreNord2011 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 200 ;
+	 rdfs:label "FDECentreNord2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreOuest2011
+:BTCentreOuest2011 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 20863 ;
+	 rdfs:label "BTCentreOuest2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreOuest2011
+:HTCentreOuest2011 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 43 ;
+	 rdfs:label "HTCentreOuest2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreOuest2011
+:FDECentreOuest2011 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1200 ;
+	 rdfs:label "FDECentreOuest2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreSud2011
+:BTCentreSud2011 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 3973 ;
+	 rdfs:label "BTCentreSud2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreSud2011
+:HTCentreSud2011 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 19 ;
+	 rdfs:label "HTCentreSud2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreSud2011
+:FDECentreSud2011 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 400 ;
+	 rdfs:label "FDECentreSud2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTEst2011
+:BTEst2011 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 9584 ;
+	 rdfs:label "BTEst2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTEst2011
+:HTEst2011 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 34 ;
+	 rdfs:label "HTEst2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEEst2011
+:FDEEst2011 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1000 ;
+	 rdfs:label "FDEEst2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTHautsBassins2011
+:BTHautsBassins2011 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 74350 ;
+	 rdfs:label "BTHautsBassins2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTHautsBassins2011
+:HTHautsBassins2011 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 188 ;
+	 rdfs:label "HTHautsBassins2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEHautsBassins2011
+:FDEHautsBassins2011 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 200 ;
+	 rdfs:label "FDEHautsBassins2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTNord2011
+:BTNord2011 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 15498 ;
+	 rdfs:label "BTNord2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTNord2011
+:HTNord2011 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 44 ;
+	 rdfs:label "HTNord2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDENord2011
+:FDENord2011 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 3500 ;
+	 rdfs:label "FDENord2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTPlateauCentral2011
+:BTPlateauCentral2011 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 6042 ;
+	 rdfs:label "BTPlateauCentral2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTPlateauCentral2011
+:HTPlateauCentral2011 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 17 ;
+	 rdfs:label "HTPlateauCentral2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEPlateauCentral2011
+:FDEPlateauCentral2011 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1700 ;
+	 rdfs:label "FDEPlateauCentral2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSahel2011
+:BTSahel2011 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 5912 ;
+	 rdfs:label "BTSahel2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSahel2011
+:HTSahel2011 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 25 ;
+	 rdfs:label "HTSahel2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESahel2011
+:FDESahel2011 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1200 ;
+	 rdfs:label "FDESahel2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSudOuest2011
+:BTSudOuest2011 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 6446 ;
+	 rdfs:label "BTSudOuest2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSudOuest2011
+:HTSudOuest2011 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 22 ;
+	 rdfs:label "HTSudOuest2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESudOuest2011
+:FDESudOuest2011 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 350 ;
+	 rdfs:label "FDESudOuest2011"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTBoucleMouhoun2012
+:BTBoucleMouhoun2012 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 15749 ;
+	 rdfs:label "BTBoucleMouhoun2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTBoucleMouhoun2012
+:HTBoucleMouhoun2012 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 60 ;
+	 rdfs:label "HTBoucleMouhoun2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEBoucleMouhoun2012
+:FDEBoucleMouhoun2012 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1400 ;
+	 rdfs:label "FDEBoucleMouhoun2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCascades2012
+:BTCascades2012 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 10454 ;
+	 rdfs:label "BTCascades2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCascades2012
+:HTCascades2012 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 18 ;
+	 rdfs:label "HTCascades2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECascades2012
+:FDECascades2012 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 450 ;
+	 rdfs:label "FDECascades2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentre2012
+:BTCentre2012 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 225550 ;
+	 rdfs:label "BTCentre2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentre2012
+:HTCentre2012 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 611 ;
+	 rdfs:label "HTCentre2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentre2012
+:FDECentre2012 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 400 ;
+	 rdfs:label "FDECentre2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreEst2012
+:BTCentreEst2012 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 16642 ;
+	 rdfs:label "BTCentreEst2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreEst2012
+:HTCentreEst2012 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 53 ;
+	 rdfs:label "HTCentreEst2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreEst2012
+:FDECentreEst2012 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2500 ;
+	 rdfs:label "FDECentreEst2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreNord2012
+:BTCentreNord2012 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 11741 ;
+	 rdfs:label "BTCentreNord2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreNord2012
+:HTCentreNord2012 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 32 ;
+	 rdfs:label "HTCentreNord2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreNord2012
+:FDECentreNord2012 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 400 ;
+	 rdfs:label "FDECentreNord2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreOuest2012
+:BTCentreOuest2012 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 22993 ;
+	 rdfs:label "BTCentreOuest2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreOuest2012
+:HTCentreOuest2012 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 52 ;
+	 rdfs:label "HTCentreOuest2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreOuest2012
+:FDECentreOuest2012 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1500 ;
+	 rdfs:label "FDECentreOuest2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreSud2012
+:BTCentreSud2012 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 4494 ;
+	 rdfs:label "BTCentreSud2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreSud2012
+:HTCentreSud2012 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 21 ;
+	 rdfs:label "HTCentreSud2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreSud2012
+:FDECentreSud2012 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 480 ;
+	 rdfs:label "FDECentreSud2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTEst2012
+:BTEst2012 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 10769 ;
+	 rdfs:label "BTEst2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTEst2012
+:HTEst2012 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 38 ;
+	 rdfs:label "HTEst2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEEst2012
+:FDEEst2012 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1500 ;
+	 rdfs:label "FDEEst2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTHautsBassins2012
+:BTHautsBassins2012 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 79768 ;
+	 rdfs:label "BTHautsBassins2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTHautsBassins2012
+:HTHautsBassins2012 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 207 ;
+	 rdfs:label "HTHautsBassins2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEHautsBassins2012
+:FDEHautsBassins2012 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 800 ;
+	 rdfs:label "FDEHautsBassins2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTNord2012
+:BTNord2012 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 16722 ;
+	 rdfs:label "BTNord2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTNord2012
+:HTNord2012 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 59 ;
+	 rdfs:label "HTNord2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDENord2012
+:FDENord2012 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 3500 ;
+	 rdfs:label "FDENord2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTPlateauCentral2012
+:BTPlateauCentral2012 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 6673 ;
+	 rdfs:label "BTPlateauCentral2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTPlateauCentral2012
+:HTPlateauCentral2012 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 17 ;
+	 rdfs:label "HTPlateauCentral2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEPlateauCentral2012
+:FDEPlateauCentral2012 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1000 ;
+	 rdfs:label "FDEPlateauCentral2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSahel2012
+:BTSahel2012 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 6510 ;
+	 rdfs:label "BTSahel2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSahel2012
+:HTSahel2012 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 26 ;
+	 rdfs:label "HTSahel2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESahel2012
+:FDESahel2012 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1500 ;
+	 rdfs:label "FDESahel2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSudOuest2012
+:BTSudOuest2012 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 6967 ;
+	 rdfs:label "BTSudOuest2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSudOuest2012
+:HTSudOuest2012 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 24 ;
+	 rdfs:label "HTSudOuest2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESudOuest2012
+:FDESudOuest2012 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 460 ;
+	 rdfs:label "FDESudOuest2012"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTBoucleMouhoun2013
+:BTBoucleMouhoun2013 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 16756 ;
+	 rdfs:label "BTBoucleMouhoun2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTBoucleMouhoun2013
+:HTBoucleMouhoun2013 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 68 ;
+	 rdfs:label "HTBoucleMouhoun2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEBoucleMouhoun2013
+:FDEBoucleMouhoun2013 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1500 ;
+	 rdfs:label "FDEBoucleMouhoun2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCascades2013
+:BTCascades2013 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 14247 ;
+	 rdfs:label "BTCascades2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCascades2013
+:HTCascades2013 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 26 ;
+	 rdfs:label "HTCascades2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECascades2013
+:FDECascades2013 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 888 ;
+	 rdfs:label "FDECascades2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentre2013
+:BTCentre2013 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 241080 ;
+	 rdfs:label "BTCentre2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentre2013
+:HTCentre2013 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 673 ;
+	 rdfs:label "HTCentre2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentre2013
+:FDECentre2013 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 400 ;
+	 rdfs:label "FDECentre2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreEst2013
+:BTCentreEst2013 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 18144 ;
+	 rdfs:label "BTCentreEst2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreEst2013
+:HTCentreEst2013 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 455 ;
+	 rdfs:label "HTCentreEst2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreEst2013
+:FDECentreEst2013 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2828 ;
+	 rdfs:label "FDECentreEst2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreNord2013
+:BTCentreNord2013 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 11274 ;
+	 rdfs:label "BTCentreNord2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreNord2013
+:HTCentreNord2013 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 32 ;
+	 rdfs:label "HTCentreNord2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreNord2013
+:FDECentreNord2013 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 620 ;
+	 rdfs:label "FDECentreNord2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreOuest2013
+:BTCentreOuest2013 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 23122 ;
+	 rdfs:label "BTCentreOuest2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreOuest2013
+:HTCentreOuest2013 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 50 ;
+	 rdfs:label "HTCentreOuest2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreOuest2013
+:FDECentreOuest2013 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1828 ;
+	 rdfs:label "FDECentreOuest2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreSud2013
+:BTCentreSud2013 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 6631 ;
+	 rdfs:label "BTCentreSud2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreSud2013
+:HTCentreSud2013 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 27 ;
+	 rdfs:label "HTCentreSud2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreSud2013
+:FDECentreSud2013 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1025 ;
+	 rdfs:label "FDECentreSud2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTEst2013
+:BTEst2013 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 11855 ;
+	 rdfs:label "BTEst2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTEst2013
+:HTEst2013 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 45 ;
+	 rdfs:label "HTEst2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEEst2013
+:FDEEst2013 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1825 ;
+	 rdfs:label "FDEEst2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTHautsBassins2013
+:BTHautsBassins2013 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 84078 ;
+	 rdfs:label "BTHautsBassins2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTHautsBassins2013
+:HTHautsBassins2013 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 203 ;
+	 rdfs:label "HTHautsBassins2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEHautsBassins2013
+:FDEHautsBassins2013 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1230 ;
+	 rdfs:label "FDEHautsBassins2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTNord2013
+:BTNord2013 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 18353 ;
+	 rdfs:label "BTNord2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTNord2013
+:HTNord2013 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 63 ;
+	 rdfs:label "HTNord2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDENord2013
+:FDENord2013 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 3720 ;
+	 rdfs:label "FDENord2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTPlateauCentral2013
+:BTPlateauCentral2013 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 8697 ;
+	 rdfs:label "BTPlateauCentral2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTPlateauCentral2013
+:HTPlateauCentral2013 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 22 ;
+	 rdfs:label "HTPlateauCentral2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEPlateauCentral2013
+:FDEPlateauCentral2013 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1320 ;
+	 rdfs:label "FDEPlateauCentral2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSahel2013
+:BTSahel2013 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 4753 ;
+	 rdfs:label "BTSahel2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSahel2013
+:HTSahel2013 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 32 ;
+	 rdfs:label "HTSahel2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESahel2013
+:FDESahel2013 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2040 ;
+	 rdfs:label "FDESahel2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSudOuest2013
+:BTSudOuest2013 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 8340 ;
+	 rdfs:label "BTSudOuest2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSudOuest2013
+:HTSudOuest2013 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 27 ;
+	 rdfs:label "HTSudOuest2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESudOuest2013
+:FDESudOuest2013 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 460 ;
+	 rdfs:label "FDESudOuest2013"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTBoucleMouhoun2014
+:BTBoucleMouhoun2014 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 28217 ;
+	 rdfs:label "BTBoucleMouhoun2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTBoucleMouhoun2014
+:HTBoucleMouhoun2014 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 90 ;
+	 rdfs:label "HTBoucleMouhoun2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEBoucleMouhoun2014
+:FDEBoucleMouhoun2014 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1920 ;
+	 rdfs:label "FDEBoucleMouhoun2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCascades2014
+:BTCascades2014 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 3667 ;
+	 rdfs:label "BTCascades2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCascades2014
+:HTCascades2014 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 11 ;
+	 rdfs:label "HTCascades2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECascades2014
+:FDECascades2014 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1205 ;
+	 rdfs:label "FDECascades2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentre2014
+:BTCentre2014 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 257122 ;
+	 rdfs:label "BTCentre2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentre2014
+:HTCentre2014 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 689 ;
+	 rdfs:label "HTCentre2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentre2014
+:FDECentre2014 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 620 ;
+	 rdfs:label "FDECentre2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreEst2014
+:BTCentreEst2014 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 40520 ;
+	 rdfs:label "BTCentreEst2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreEst2014
+:HTCentreEst2014 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 126 ;
+	 rdfs:label "HTCentreEst2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreEst2014
+:FDECentreEst2014 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 5600 ;
+	 rdfs:label "FDECentreEst2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreNord2014
+:BTCentreNord2014 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 8790 ;
+	 rdfs:label "BTCentreNord2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreNord2014
+:HTCentreNord2014 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 23 ;
+	 rdfs:label "HTCentreNord2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreNord2014
+:FDECentreNord2014 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 725 ;
+	 rdfs:label "FDECentreNord2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreOuest2014
+:BTCentreOuest2014 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 12028 ;
+	 rdfs:label "BTCentreOuest2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreOuest2014
+:HTCentreOuest2014 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 29 ;
+	 rdfs:label "HTCentreOuest2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreOuest2014
+:FDECentreOuest2014 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 3025 ;
+	 rdfs:label "FDECentreOuest2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreSud2014
+:BTCentreSud2014 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 8255 ;
+	 rdfs:label "BTCentreSud2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreSud2014
+:HTCentreSud2014 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 34 ;
+	 rdfs:label "HTCentreSud2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreSud2014
+:FDECentreSud2014 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1800 ;
+	 rdfs:label "FDECentreSud2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTEst2014
+:BTEst2014 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 8596 ;
+	 rdfs:label "BTEst2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTEst2014
+:HTEst2014 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 18 ;
+	 rdfs:label "HTEst2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEEst2014
+:FDEEst2014 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1950 ;
+	 rdfs:label "FDEEst2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTHautsBassins2014
+:BTHautsBassins2014 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 104400 ;
+	 rdfs:label "BTHautsBassins2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTHautsBassins2014
+:HTHautsBassins2014 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 241 ;
+	 rdfs:label "HTHautsBassins2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEHautsBassins2014
+:FDEHautsBassins2014 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1830 ;
+	 rdfs:label "FDEHautsBassins2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTNord2014
+:BTNord2014 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 590 ;
+	 rdfs:label "BTNord2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTNord2014
+:HTNord2014 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes -1 ;
+	 rdfs:label "HTNord2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDENord2014
+:FDENord2014 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 5450 ;
+	 rdfs:label "FDENord2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTPlateauCentral2014
+:BTPlateauCentral2014 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 23571 ;
+	 rdfs:label "BTPlateauCentral2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTPlateauCentral2014
+:HTPlateauCentral2014 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 110 ;
+	 rdfs:label "HTPlateauCentral2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEPlateauCentral2014
+:FDEPlateauCentral2014 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1895 ;
+	 rdfs:label "FDEPlateauCentral2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSahel2014
+:BTSahel2014 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 5161 ;
+	 rdfs:label "BTSahel2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSahel2014
+:HTSahel2014 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 34 ;
+	 rdfs:label "HTSahel2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESahel2014
+:FDESahel2014 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2040 ;
+	 rdfs:label "FDESahel2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSudOuest2014
+:BTSudOuest2014 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 6158 ;
+	 rdfs:label "BTSudOuest2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSudOuest2014
+:HTSudOuest2014 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 20 ;
+	 rdfs:label "HTSudOuest2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESudOuest2014
+:FDESudOuest2014 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1023 ;
+	 rdfs:label "FDESudOuest2014"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTBoucleMouhoun2015
+:BTBoucleMouhoun2015 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 31120 ;
+	 rdfs:label "BTBoucleMouhoun2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTBoucleMouhoun2015
+:HTBoucleMouhoun2015 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 104 ;
+	 rdfs:label "HTBoucleMouhoun2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEBoucleMouhoun2015
+:FDEBoucleMouhoun2015 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1996 ;
+	 rdfs:label "FDEBoucleMouhoun2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCascades2015
+:BTCascades2015 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 4099 ;
+	 rdfs:label "BTCascades2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCascades2015
+:HTCascades2015 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 11 ;
+	 rdfs:label "HTCascades2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECascades2015
+:FDECascades2015 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1253 ;
+	 rdfs:label "FDECascades2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentre2015
+:BTCentre2015 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 270306 ;
+	 rdfs:label "BTCentre2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentre2015
+:HTCentre2015 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 720 ;
+	 rdfs:label "HTCentre2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentre2015
+:FDECentre2015 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 644 ;
+	 rdfs:label "FDECentre2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreEst2015
+:BTCentreEst2015 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 43394 ;
+	 rdfs:label "BTCentreEst2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreEst2015
+:HTCentreEst2015 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 137 ;
+	 rdfs:label "HTCentreEst2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreEst2015
+:FDECentreEst2015 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 5821 ;
+	 rdfs:label "FDECentreEst2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreNord2015
+:BTCentreNord2015 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 9737 ;
+	 rdfs:label "BTCentreNord2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreNord2015
+:HTCentreNord2015 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 28 ;
+	 rdfs:label "HTCentreNord2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreNord2015
+:FDECentreNord2015 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 754 ;
+	 rdfs:label "FDECentreNord2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreOuest2015
+:BTCentreOuest2015 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 13409 ;
+	 rdfs:label "BTCentreOuest2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreOuest2015
+:HTCentreOuest2015 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 28 ;
+	 rdfs:label "HTCentreOuest2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreOuest2015
+:FDECentreOuest2015 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 3144 ;
+	 rdfs:label "FDECentreOuest2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreSud2015
+:BTCentreSud2015 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 8891 ;
+	 rdfs:label "BTCentreSud2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreSud2015
+:HTCentreSud2015 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 34 ;
+	 rdfs:label "HTCentreSud2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreSud2015
+:FDECentreSud2015 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1871 ;
+	 rdfs:label "FDECentreSud2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTEst2015
+:BTEst2015 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 9830 ;
+	 rdfs:label "BTEst2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTEst2015
+:HTEst2015 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 22 ;
+	 rdfs:label "HTEst2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEEst2015
+:FDEEst2015 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2027 ;
+	 rdfs:label "FDEEst2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTHautsBassins2015
+:BTHautsBassins2015 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 113083 ;
+	 rdfs:label "BTHautsBassins2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTHautsBassins2015
+:HTHautsBassins2015 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 260 ;
+	 rdfs:label "HTHautsBassins2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEHautsBassins2015
+:FDEHautsBassins2015 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1902 ;
+	 rdfs:label "FDEHautsBassins2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTNord2015
+:BTNord2015 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 1304 ;
+	 rdfs:label "BTNord2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTNord2015
+:HTNord2015 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes -1 ;
+	 rdfs:label "HTNord2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDENord2015
+:FDENord2015 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 5665 ;
+	 rdfs:label "FDENord2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTPlateauCentral2015
+:BTPlateauCentral2015 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 25910 ;
+	 rdfs:label "BTPlateauCentral2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTPlateauCentral2015
+:HTPlateauCentral2015 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 97 ;
+	 rdfs:label "HTPlateauCentral2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEPlateauCentral2015
+:FDEPlateauCentral2015 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1970 ;
+	 rdfs:label "FDEPlateauCentral2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSahel2015
+:BTSahel2015 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 5732 ;
+	 rdfs:label "BTSahel2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSahel2015
+:HTSahel2015 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 35 ;
+	 rdfs:label "HTSahel2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESahel2015
+:FDESahel2015 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2120 ;
+	 rdfs:label "FDESahel2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSudOuest2015
+:BTSudOuest2015 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 6512 ;
+	 rdfs:label "BTSudOuest2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSudOuest2015
+:HTSudOuest2015 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 22 ;
+	 rdfs:label "HTSudOuest2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESudOuest2015
+:FDESudOuest2015 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1063 ;
+	 rdfs:label "FDESudOuest2015"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTBoucleMouhoun2016
+:BTBoucleMouhoun2016 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 25678 ;
+	 rdfs:label "BTBoucleMouhoun2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTBoucleMouhoun2016
+:HTBoucleMouhoun2016 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 105 ;
+	 rdfs:label "HTBoucleMouhoun2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEBoucleMouhoun2016
+:FDEBoucleMouhoun2016 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2148 ;
+	 rdfs:label "FDEBoucleMouhoun2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCascades2016
+:BTCascades2016 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 17784 ;
+	 rdfs:label "BTCascades2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCascades2016
+:HTCascades2016 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 36 ;
+	 rdfs:label "HTCascades2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECascades2016
+:FDECascades2016 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1348 ;
+	 rdfs:label "FDECascades2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentre2016
+:BTCentre2016 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 285163 ;
+	 rdfs:label "BTCentre2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentre2016
+:HTCentre2016 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 785 ;
+	 rdfs:label "HTCentre2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentre2016
+:FDECentre2016 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 693 ;
+	 rdfs:label "FDECentre2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreEst2016
+:BTCentreEst2016 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 23505 ;
+	 rdfs:label "BTCentreEst2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreEst2016
+:HTCentreEst2016 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 100 ;
+	 rdfs:label "HTCentreEst2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreEst2016
+:FDECentreEst2016 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 6264 ;
+	 rdfs:label "FDECentreEst2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreNord2016
+:BTCentreNord2016 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 16287 ;
+	 rdfs:label "BTCentreNord2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreNord2016
+:HTCentreNord2016 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 47 ;
+	 rdfs:label "HTCentreNord2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreNord2016
+:FDECentreNord2016 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 811 ;
+	 rdfs:label "FDECentreNord2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreOuest2016
+:BTCentreOuest2016 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 32117 ;
+	 rdfs:label "BTCentreOuest2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreOuest2016
+:HTCentreOuest2016 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 67 ;
+	 rdfs:label "HTCentreOuest2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreOuest2016
+:FDECentreOuest2016 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 3383 ;
+	 rdfs:label "FDECentreOuest2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreSud2016
+:BTCentreSud2016 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 9966 ;
+	 rdfs:label "BTCentreSud2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreSud2016
+:HTCentreSud2016 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 41 ;
+	 rdfs:label "HTCentreSud2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreSud2016
+:FDECentreSud2016 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2013 ;
+	 rdfs:label "FDECentreSud2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTEst2016
+:BTEst2016 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 14763 ;
+	 rdfs:label "BTEst2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTEst2016
+:HTEst2016 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 57 ;
+	 rdfs:label "HTEst2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEEst2016
+:FDEEst2016 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2181 ;
+	 rdfs:label "FDEEst2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTHautsBassins2016
+:BTHautsBassins2016 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 105489 ;
+	 rdfs:label "BTHautsBassins2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTHautsBassins2016
+:HTHautsBassins2016 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 234 ;
+	 rdfs:label "HTHautsBassins2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEHautsBassins2016
+:FDEHautsBassins2016 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2047 ;
+	 rdfs:label "FDEHautsBassins2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTNord2016
+:BTNord2016 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 23805 ;
+	 rdfs:label "BTNord2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTNord2016
+:HTNord2016 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 80 ;
+	 rdfs:label "HTNord2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDENord2016
+:FDENord2016 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 6096 ;
+	 rdfs:label "FDENord2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTPlateauCentral2016
+:BTPlateauCentral2016 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 9043 ;
+	 rdfs:label "BTPlateauCentral2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTPlateauCentral2016
+:HTPlateauCentral2016 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 36 ;
+	 rdfs:label "HTPlateauCentral2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEPlateauCentral2016
+:FDEPlateauCentral2016 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2120 ;
+	 rdfs:label "FDEPlateauCentral2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSahel2016
+:BTSahel2016 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 9160 ;
+	 rdfs:label "BTSahel2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSahel2016
+:HTSahel2016 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 39 ;
+	 rdfs:label "HTSahel2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESahel2016
+:FDESahel2016 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2281 ;
+	 rdfs:label "FDESahel2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSudOuest2016
+:BTSudOuest2016 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 11251 ;
+	 rdfs:label "BTSudOuest2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSudOuest2016
+:HTSudOuest2016 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 37 ;
+	 rdfs:label "HTSudOuest2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESudOuest2016
+:FDESudOuest2016 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1144 ;
+	 rdfs:label "FDESudOuest2016"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTBoucleMouhoun2017
+:BTBoucleMouhoun2017 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 29844 ;
+	 rdfs:label "BTBoucleMouhoun2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTBoucleMouhoun2017
+:HTBoucleMouhoun2017 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 112 ;
+	 rdfs:label "HTBoucleMouhoun2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEBoucleMouhoun2017
+:FDEBoucleMouhoun2017 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :BoucleMouhoun ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2255 ;
+	 rdfs:label "FDEBoucleMouhoun2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCascades2017
+:BTCascades2017 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 20236 ;
+	 rdfs:label "BTCascades2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCascades2017
+:HTCascades2017 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 35 ;
+	 rdfs:label "HTCascades2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECascades2017
+:FDECascades2017 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Cascades ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 970 ;
+	 rdfs:label "FDECascades2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentre2017
+:BTCentre2017 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 300277 ;
+	 rdfs:label "BTCentre2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentre2017
+:HTCentre2017 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 832 ;
+	 rdfs:label "HTCentre2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentre2017
+:FDECentre2017 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Centre ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 647 ;
+	 rdfs:label "FDECentre2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreEst2017
+:BTCentreEst2017 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 25260 ;
+	 rdfs:label "BTCentreEst2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreEst2017
+:HTCentreEst2017 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 78 ;
+	 rdfs:label "HTCentreEst2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreEst2017
+:FDECentreEst2017 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :CentreEst ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 6110 ;
+	 rdfs:label "FDECentreEst2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreNord2017
+:BTCentreNord2017 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 17343 ;
+	 rdfs:label "BTCentreNord2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreNord2017
+:HTCentreNord2017 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 52 ;
+	 rdfs:label "HTCentreNord2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreNord2017
+:FDECentreNord2017 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :CentreNord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 837 ;
+	 rdfs:label "FDECentreNord2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreOuest2017
+:BTCentreOuest2017 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 35397 ;
+	 rdfs:label "BTCentreOuest2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreOuest2017
+:HTCentreOuest2017 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 69 ;
+	 rdfs:label "HTCentreOuest2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreOuest2017
+:FDECentreOuest2017 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :CentreOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 2664 ;
+	 rdfs:label "FDECentreOuest2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTCentreSud2017
+:BTCentreSud2017 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 10537 ;
+	 rdfs:label "BTCentreSud2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTCentreSud2017
+:HTCentreSud2017 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 48 ;
+	 rdfs:label "HTCentreSud2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDECentreSud2017
+:FDECentreSud2017 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :CentreSud ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1519 ;
+	 rdfs:label "FDECentreSud2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTEst2017
+:BTEst2017 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 15496 ;
+	 rdfs:label "BTEst2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTEst2017
+:HTEst2017 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 57 ;
+	 rdfs:label "HTEst2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEEst2017
+:FDEEst2017 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Est ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 4176 ;
+	 rdfs:label "FDEEst2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTHautsBassins2017
+:BTHautsBassins2017 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 114012 ;
+	 rdfs:label "BTHautsBassins2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTHautsBassins2017
+:HTHautsBassins2017 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 277 ;
+	 rdfs:label "HTHautsBassins2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEHautsBassins2017
+:FDEHautsBassins2017 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :HautsBassins ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 4269 ;
+	 rdfs:label "FDEHautsBassins2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTNord2017
+:BTNord2017 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 25433 ;
+	 rdfs:label "BTNord2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTNord2017
+:HTNord2017 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 60 ;
+	 rdfs:label "HTNord2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDENord2017
+:FDENord2017 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Nord ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 6398 ;
+	 rdfs:label "FDENord2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTPlateauCentral2017
+:BTPlateauCentral2017 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 9572 ;
+	 rdfs:label "BTPlateauCentral2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTPlateauCentral2017
+:HTPlateauCentral2017 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 26 ;
+	 rdfs:label "HTPlateauCentral2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDEPlateauCentral2017
+:FDEPlateauCentral2017 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :PlateauCentral ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 1409 ;
+	 rdfs:label "FDEPlateauCentral2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSahel2017
+:BTSahel2017 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 10270 ;
+	 rdfs:label "BTSahel2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSahel2017
+:HTSahel2017 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 41 ;
+	 rdfs:label "HTSahel2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESahel2017
+:FDESahel2017 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :Sahel ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 3818 ;
+	 rdfs:label "FDESahel2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BTSudOuest2017
+:BTSudOuest2017 rdf:type owl:NamedIndividual , 
+ 		:BasseTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Basse Tension"^^rdfs:Literal ;
+	:nombreAbonnes 12697 ;
+	 rdfs:label "BTSudOuest2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HTSudOuest2017
+:HTSudOuest2017 rdf:type owl:NamedIndividual , 
+ 		:HauteTension, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Haute Tension"^^rdfs:Literal ;
+	:nombreAbonnes 50 ;
+	 rdfs:label "HTSudOuest2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#FDESudOuest2017
+:FDESudOuest2017 rdf:type owl:NamedIndividual , 
+ 		:AlimentationFDE, 
+ 		:Tension ;
+	:aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> ;
+	:aPourRegion :SudOuest ;
+	:labelTypeTension "Alimentés par FDE"^^rdfs:Literal ;
+	:nombreAbonnes 975 ;
+	 rdfs:label "FDESudOuest2017"@fr .
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#BoucleMouhoun
+:BoucleMouhoun rdf:type owl:NamedIndividual ,
+                        :Region ;
+               :nomRegion "Boucle du Mouhoun"^^rdfs:Literal ;
+               rdfs:label "BoucleMouhoun"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#Cascades
+:Cascades rdf:type owl:NamedIndividual ,
+                   :Region ;
+          :nomRegion "Cascades"^^rdfs:Literal ;
+          rdfs:label "Cascades"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#Centre
+:Centre rdf:type owl:NamedIndividual ,
+                 :Region ;
+        :nomRegion "Centre"^^rdfs:Literal ;
+        rdfs:label "Centre"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#CentreEst
+:CentreEst rdf:type owl:NamedIndividual ,
+                    :Region ;
+           :nomRegion "Centre-Est"^^rdfs:Literal ;
+           rdfs:label "CentreEst"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#CentreNord
+:CentreNord rdf:type owl:NamedIndividual ,
+                     :Region ;
+            :nomRegion "Centre-Nord"^^rdfs:Literal ;
+            rdfs:label "CentreNord"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#CentreOuest
+:CentreOuest rdf:type owl:NamedIndividual ,
+                      :Region ;
+             :nomRegion "Centre-Ouest"^^rdfs:Literal ;
+             rdfs:label "CentreOuest"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#CentreSud
+:CentreSud rdf:type owl:NamedIndividual ,
+                    :Region ;
+           :nomRegion "Centre-Sud"^^rdfs:Literal ;
+           rdfs:label "CentreSud"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#HautsBassins
+:HautsBassins rdf:type owl:NamedIndividual ,
+                       :Region ;
+              :nomRegion "Hauts-Bassins"^^rdfs:Literal ;
+              rdfs:label "HautsBassins"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#Nord
+:Nord rdf:type owl:NamedIndividual ,
+               :Region ;
+      :nomRegion "Nord"^^rdfs:Literal ;
+      rdfs:label "Nord"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#PlateauCentral
+:PlateauCentral rdf:type owl:NamedIndividual ,
+                         :Region ;
+                :nomRegion "Plateau Central"^^rdfs:Literal ;
+                rdfs:label "PlateauCentral"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#Sahel
+:Sahel rdf:type owl:NamedIndividual ,
+                :Region ;
+       :nomRegion "Sahel"^^rdfs:Literal ;
+       rdfs:label "Sahel"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#SudOuest
+:SudOuest rdf:type owl:NamedIndividual ,
+                   :Region ;
+          :nomRegion "Sud-Ouest"^^rdfs:Literal ;
+          rdfs:label "SudOuest"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006
+<http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2006> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2006 ;
+                                                               rdfs:label "2006"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007
+<http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2007> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2007 ;
+                                                               rdfs:label "2007"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008
+<http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2008> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2008 ;
+                                                               rdfs:label "2008"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009
+<http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2009> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2009 ;
+                                                               rdfs:label "2009"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010
+<http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2010> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2010 ;
+                                                               rdfs:label "2010"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011
+<http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2011> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2011 ;
+                                                               rdfs:label "2011"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012
+<http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2012> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2012 ;
+                                                               rdfs:label "2012"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013
+<http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2013> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2013 ;
+                                                               rdfs:label "2013"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014
+<http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2014> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2014 ;
+                                                               rdfs:label "2014"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015
+<http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2015> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2015 ;
+                                                               rdfs:label "2015"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016
+<http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2016> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2016 ;
+                                                               rdfs:label "2016"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017
+<http://www.semanticweb.org/ozias/pnpdo/NbAbonElecRegion#2017> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2017 ;
+                                                               rdfs:label "2017"@fr .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AlimentationFDE
+                :BasseTension
+                :HauteTension
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

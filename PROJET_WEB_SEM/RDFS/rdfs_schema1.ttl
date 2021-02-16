@@ -1,0 +1,32 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+<http://www.semanticweb.org/ozias/pnpdo/schema#EnergieJeu>
+	a rdfs:Class;
+	rdfs:subClassOf <http://www.semanticweb.org/ozias/pnpdo/schema#Distribution>
+	rdfs:comment "La classe decrivant le jeu de données sur la puissance souscrite par région au burkina et par année".
+
+<http://www.semanticweb.org/ozias/pnpdo/schema#Region>
+	a rdfs:Class;
+	rdfs:subClassOf <http://www.semanticweb.org/ozias/pnpdo/schema#AttributDeDonnee>
+	rdfs:comment "La classe région" .
+
+<http://www.semanticweb.org/ozias/pnpdo/shema#Annee>
+	a rdfs:Class;
+	rdfs:comment "La classe Annee" ;
+	rdfs:subClassOf <http://www.semanticweb.org/ozias/pnpdo/schema#AttributDeDonnee> .
+
+<http://www.semanticweb.org/ozias/pnpdo/shema#Puissance>
+	a rdfs:Class;
+	rdfs:comment "La classe Puisssance énergie souscrite en MW" ;
+	rdfs:subClassOf <http://www.semanticweb.org/ozias/pnpdo/schema#Donnee> .
+
+<http://www.semanticweb.org/ozias/pnpdo/schema#aPourAnnee>
+	a rdf:Property;
+	rdfs:range<http://www.semanticweb.org/ozias/pnpdo/schema#Annee> ;
+	rdfs:domain<http://www.semanticweb.org/ozias/pnpdo/schema#Puissance> 
+
+<http://www.semanticweb.org/ozias/pnpdo/schema#aPourRegion>
+	a rdf:Property;
+	rdfs:range<http://www.semanticweb.org/ozias/pnpdo/schema#Region> ;
+	rdfs:domain<http://www.semanticweb.org/ozias/pnpdo/schema#Puissance> 

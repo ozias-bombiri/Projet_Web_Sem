@@ -1,0 +1,3337 @@
+@prefix : <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge> .
+
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#aPourAnnee
+:aPourAnnee rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#aPourSexe
+:aPourSexe rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#aPourTranche
+:aPourTranche rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/abou/ontologies/2021/1/#valeurSexe
+:valeurSexe rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :Sexe ;
+                   rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#anneeValeur
+:anneeValeur rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :Annee ;
+                   rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombrePersonne
+:nombrePersonne rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain :NombreDePersonne ;
+                      rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#tranche
+:tranche rdf:type owl:DatatypeProperty ;
+               rdfs:domain :TrancheAge ;
+               rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#Annee
+:Annee rdf:type owl:Class ;
+             owl:disjointWith :Sexe ,
+                              :TrancheAge .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#NombreDePersonne
+:NombreDePersonne rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#Sexe
+:Sexe rdf:type owl:Class ;
+            owl:disjointWith :TrancheAge .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#TrancheAge
+:TrancheAge rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#Feminin
+:Feminin rdf:type owl:NamedIndividual ,
+                        :Sexe ;
+               :valeurSexe "Feminin"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#Masculin
+:Masculin rdf:type owl:NamedIndividual ,
+                         :Sexe ;
+                :valeurSexe "Masculin"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_0
+:nombreFeminin_0 rdf:type owl:NamedIndividual ,
+                                :NombreDePersonne ;
+                       :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                       :aPourSexe :Feminin ;
+                       :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                       :nombrePersonne 1369273 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_1
+:nombreFeminin_1 rdf:type owl:NamedIndividual ,
+                                :NombreDePersonne ;
+                       :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                       :aPourSexe :Feminin ;
+                       :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                       :nombrePersonne 1142005 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_10
+:nombreFeminin_10 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                        :nombrePersonne 198800 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_100
+:nombreFeminin_100 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                         :nombrePersonne 52224 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_101
+:nombreFeminin_101 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                         :nombrePersonne 43880 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_102
+:nombreFeminin_102 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                         :nombrePersonne 1621576 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_103
+:nombreFeminin_103 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                         :nombrePersonne 1367302 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_104
+:nombreFeminin_104 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                         :nombrePersonne 1171519 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_105
+:nombreFeminin_105 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                         :nombrePersonne 976801 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_106
+:nombreFeminin_106 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                         :nombrePersonne 792323 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_107
+:nombreFeminin_107 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                         :nombrePersonne 722322 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_108
+:nombreFeminin_108 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                         :nombrePersonne 582859 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_109
+:nombreFeminin_109 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                         :nombrePersonne 480391 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_11
+:nombreFeminin_11 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                        :nombrePersonne 145451 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_110
+:nombreFeminin_110 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                         :nombrePersonne 363284 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_111
+:nombreFeminin_111 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                         :nombrePersonne 316623 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_112
+:nombreFeminin_112 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                         :nombrePersonne 237223 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_113
+:nombreFeminin_113 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                         :nombrePersonne 199018 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_114
+:nombreFeminin_114 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                         :nombrePersonne 134412 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_115
+:nombreFeminin_115 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                         :nombrePersonne 119715 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_116
+:nombreFeminin_116 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                         :nombrePersonne 69127 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_117
+:nombreFeminin_117 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                         :nombrePersonne 53746 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_118
+:nombreFeminin_118 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                         :nombrePersonne 44315 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_119
+:nombreFeminin_119 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                         :nombrePersonne 1654797 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_12
+:nombreFeminin_12 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                        :nombrePersonne 130708 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_120
+:nombreFeminin_120 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                         :nombrePersonne 1413387 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_121
+:nombreFeminin_121 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                         :nombrePersonne 1206710 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_122
+:nombreFeminin_122 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                         :nombrePersonne 1012377 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_123
+:nombreFeminin_123 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                         :nombrePersonne 822920 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_124
+:nombreFeminin_124 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                         :nombrePersonne 737833 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_125
+:nombreFeminin_125 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                         :nombrePersonne 601544 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_126
+:nombreFeminin_126 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                         :nombrePersonne 504745 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_127
+:nombreFeminin_127 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                         :nombrePersonne 377090 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_128
+:nombreFeminin_128 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                         :nombrePersonne 325836 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_129
+:nombreFeminin_129 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                         :nombrePersonne 248944 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_13
+:nombreFeminin_13 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                        :nombrePersonne 84503 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_130
+:nombreFeminin_130 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                         :nombrePersonne 204789 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_131
+:nombreFeminin_131 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                         :nombrePersonne 142324 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_132
+:nombreFeminin_132 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                         :nombrePersonne 119668 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_133
+:nombreFeminin_133 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                         :nombrePersonne 74625 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_134
+:nombreFeminin_134 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                         :nombrePersonne 52530 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_135
+:nombreFeminin_135 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                         :nombrePersonne 46119 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_136
+:nombreFeminin_136 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                         :nombrePersonne 1689265 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_137
+:nombreFeminin_137 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                         :nombrePersonne 1463843 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_138
+:nombreFeminin_138 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                         :nombrePersonne 1235711 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_139
+:nombreFeminin_139 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                         :nombrePersonne 1049138 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_14
+:nombreFeminin_14 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                        :nombrePersonne 71069 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_140
+:nombreFeminin_140 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                         :nombrePersonne 860697 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_141
+:nombreFeminin_141 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                         :nombrePersonne 744274 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_142
+:nombreFeminin_142 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                         :nombrePersonne 625946 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_143
+:nombreFeminin_143 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                         :nombrePersonne 527232 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_144
+:nombreFeminin_144 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                         :nombrePersonne 394741 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_145
+:nombreFeminin_145 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                         :nombrePersonne 333407 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_146
+:nombreFeminin_146 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                         :nombrePersonne 261719 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_147
+:nombreFeminin_147 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                         :nombrePersonne 210345 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_148
+:nombreFeminin_148 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                         :nombrePersonne 150956 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_149
+:nombreFeminin_149 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                         :nombrePersonne 119614 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_15
+:nombreFeminin_15 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                        :nombrePersonne 38290 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_150
+:nombreFeminin_150 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                         :nombrePersonne 80174 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_151
+:nombreFeminin_151 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                         :nombrePersonne 51904 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_152
+:nombreFeminin_152 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                         :nombrePersonne 47527 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_153
+:nombreFeminin_153 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                         :nombrePersonne 1724267 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_154
+:nombreFeminin_154 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                         :nombrePersonne 1508582 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_155
+:nombreFeminin_155 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                         :nombrePersonne 1269451 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_156
+:nombreFeminin_156 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                         :nombrePersonne 1086792 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_157
+:nombreFeminin_157 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                         :nombrePersonne 898009 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_158
+:nombreFeminin_158 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                         :nombrePersonne 751280 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_159
+:nombreFeminin_159 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                         :nombrePersonne 654782 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_16
+:nombreFeminin_16 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                        :nombrePersonne 49441 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_160
+:nombreFeminin_160 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                         :nombrePersonne 545843 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_161
+:nombreFeminin_161 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                         :nombrePersonne 416600 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_162
+:nombreFeminin_162 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                         :nombrePersonne 340636 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_163
+:nombreFeminin_163 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                         :nombrePersonne 274875 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_164
+:nombreFeminin_164 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                         :nombrePersonne 215932 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_165
+:nombreFeminin_165 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                         :nombrePersonne 160730 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_166
+:nombreFeminin_166 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                         :nombrePersonne 118907 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_167
+:nombreFeminin_167 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                         :nombrePersonne 86584 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_168
+:nombreFeminin_168 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                         :nombrePersonne 50978 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_169
+:nombreFeminin_169 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                         :aPourSexe :Feminin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                         :nombrePersonne 49094 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_17
+:nombreFeminin_17 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                        :nombrePersonne 1414559 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_18
+:nombreFeminin_18 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                        :nombrePersonne 1179631 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_19
+:nombreFeminin_19 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                        :nombrePersonne 985689 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_2
+:nombreFeminin_2 rdf:type owl:NamedIndividual ,
+                                :NombreDePersonne ;
+                       :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                       :aPourSexe :Feminin ;
+                       :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                       :nombrePersonne 951274 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_20
+:nombreFeminin_20 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                        :nombrePersonne 803243 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_21
+:nombreFeminin_21 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                        :nombrePersonne 730558 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_22
+:nombreFeminin_22 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                        :nombrePersonne 590553 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_23
+:nombreFeminin_23 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                        :nombrePersonne 488994 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_24
+:nombreFeminin_24 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                        :nombrePersonne 371797 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_25
+:nombreFeminin_25 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                        :nombrePersonne 325937 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_26
+:nombreFeminin_26 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                        :nombrePersonne 246707 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_27
+:nombreFeminin_27 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                        :nombrePersonne 210565 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_28
+:nombreFeminin_28 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                        :nombrePersonne 146677 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_29
+:nombreFeminin_29 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                        :nombrePersonne 136751 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_3
+:nombreFeminin_3 rdf:type owl:NamedIndividual ,
+                                :NombreDePersonne ;
+                       :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                       :aPourSexe :Feminin ;
+                       :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                       :nombrePersonne 783086 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_30
+:nombreFeminin_30 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                        :nombrePersonne 85418 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_31
+:nombreFeminin_31 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                        :nombrePersonne 73639 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_32
+:nombreFeminin_32 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                        :nombrePersonne 38563 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_33
+:nombreFeminin_33 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                        :nombrePersonne 48664 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_34
+:nombreFeminin_34 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                        :nombrePersonne 1460839 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_35
+:nombreFeminin_35 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                        :nombrePersonne 1214850 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_36
+:nombreFeminin_36 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                        :nombrePersonne 1021322 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_37
+:nombreFeminin_37 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                        :nombrePersonne 833844 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_38
+:nombreFeminin_38 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                        :nombrePersonne 746105 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_39
+:nombreFeminin_39 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                        :nombrePersonne 609244 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_4
+:nombreFeminin_4 rdf:type owl:NamedIndividual ,
+                                :NombreDePersonne ;
+                       :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                       :aPourSexe :Feminin ;
+                       :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                       :nombrePersonne 703145 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_40
+:nombreFeminin_40 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                        :nombrePersonne 513671 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_41
+:nombreFeminin_41 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                        :nombrePersonne 385672 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_42
+:nombreFeminin_42 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                        :nombrePersonne 335378 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_43
+:nombreFeminin_43 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                        :nombrePersonne 258621 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_44
+:nombreFeminin_44 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                        :nombrePersonne 216718 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_45
+:nombreFeminin_45 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                        :nombrePersonne 154772 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_46
+:nombreFeminin_46 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                        :nombrePersonne 137009 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_47
+:nombreFeminin_47 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                        :nombrePersonne 91337 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_48
+:nombreFeminin_48 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                        :nombrePersonne 72511 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_49
+:nombreFeminin_49 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                        :nombrePersonne 41510 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_5
+:nombreFeminin_5 rdf:type owl:NamedIndividual ,
+                                :NombreDePersonne ;
+                       :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                       :aPourSexe :Feminin ;
+                       :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                       :nombrePersonne 576882 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_50
+:nombreFeminin_50 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                        :nombrePersonne 47441 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_51
+:nombreFeminin_51 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                        :nombrePersonne 1511264 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_52
+:nombreFeminin_52 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                        :nombrePersonne 1243828 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_53
+:nombreFeminin_53 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                        :nombrePersonne 1058146 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_54
+:nombreFeminin_54 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                        :nombrePersonne 871734 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_55
+:nombreFeminin_55 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                        :nombrePersonne 752423 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_56
+:nombreFeminin_56 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                        :nombrePersonne 633731 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_57
+:nombreFeminin_57 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                        :nombrePersonne 536416 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_58
+:nombreFeminin_58 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                        :nombrePersonne 403516 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_59
+:nombreFeminin_59 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                        :nombrePersonne 343040 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_6
+:nombreFeminin_6 rdf:type owl:NamedIndividual ,
+                                :NombreDePersonne ;
+                       :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                       :aPourSexe :Feminin ;
+                       :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                       :nombrePersonne 461239 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_60
+:nombreFeminin_60 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                        :nombrePersonne 271733 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_61
+:nombreFeminin_61 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                        :nombrePersonne 222466 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_62
+:nombreFeminin_62 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                        :nombrePersonne 163917 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_63
+:nombreFeminin_63 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                        :nombrePersonne 136841 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_64
+:nombreFeminin_64 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                        :nombrePersonne 97841 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_65
+:nombreFeminin_65 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                        :nombrePersonne 71465 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_66
+:nombreFeminin_66 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                        :nombrePersonne 44645 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_67
+:nombreFeminin_67 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                        :nombrePersonne 46202 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_68
+:nombreFeminin_68 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                        :nombrePersonne 1555837 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_69
+:nombreFeminin_69 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                        :nombrePersonne 1277538 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_7
+:nombreFeminin_7 rdf:type owl:NamedIndividual ,
+                                :NombreDePersonne ;
+                       :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                       :aPourSexe :Feminin ;
+                       :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                       :nombrePersonne 364204 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_70
+:nombreFeminin_70 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                        :nombrePersonne 1095861 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_71
+:nombreFeminin_71 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                        :nombrePersonne 909193 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_72
+:nombreFeminin_72 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                        :nombrePersonne 759232 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_73
+:nombreFeminin_73 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                        :nombrePersonne 662733 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_74
+:nombreFeminin_74 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                        :nombrePersonne 555204 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_75
+:nombreFeminin_75 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                        :nombrePersonne 425668 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_76
+:nombreFeminin_76 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                        :nombrePersonne 350320 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_77
+:nombreFeminin_77 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                        :nombrePersonne 285252 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_78
+:nombreFeminin_78 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                        :nombrePersonne 228219 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_79
+:nombreFeminin_79 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                        :nombrePersonne 174302 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_8
+:nombreFeminin_8 rdf:type owl:NamedIndividual ,
+                                :NombreDePersonne ;
+                       :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                       :aPourSexe :Feminin ;
+                       :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                       :nombrePersonne 310769 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_80
+:nombreFeminin_80 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                        :nombrePersonne 135917 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_81
+:nombreFeminin_81 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                        :nombrePersonne 105388 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_82
+:nombreFeminin_82 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                        :nombrePersonne 70083 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_83
+:nombreFeminin_83 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                        :nombrePersonne 48096 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_84
+:nombreFeminin_84 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                        :nombrePersonne 45039 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_85
+:nombreFeminin_85 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                        :nombrePersonne 1588245 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_86
+:nombreFeminin_86 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                        :nombrePersonne 1322659 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_87
+:nombreFeminin_87 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                        :nombrePersonne 1133946 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_88
+:nombreFeminin_88 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                        :nombrePersonne 942438 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_89
+:nombreFeminin_89 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                        :nombrePersonne 772059 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_9
+:nombreFeminin_9 rdf:type owl:NamedIndividual ,
+                                :NombreDePersonne ;
+                       :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                       :aPourSexe :Feminin ;
+                       :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                       :nombrePersonne 240931 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_90
+:nombreFeminin_90 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                        :nombrePersonne 695066 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_91
+:nombreFeminin_91 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                        :nombrePersonne 569156 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_92
+:nombreFeminin_92 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                        :nombrePersonne 453013 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_93
+:nombreFeminin_93 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                        :nombrePersonne 355648 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_94
+:nombreFeminin_94 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                        :nombrePersonne 301811 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_95
+:nombreFeminin_95 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                        :nombrePersonne 231469 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_96
+:nombreFeminin_96 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                        :nombrePersonne 187885 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_97
+:nombreFeminin_97 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                        :nombrePersonne 132889 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_98
+:nombreFeminin_98 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                        :nombrePersonne 114643 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreFeminin_99
+:nombreFeminin_99 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                        :aPourSexe :Feminin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                        :nombrePersonne 67798 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_0
+:nombreMasculin_0 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Masculin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                        :nombrePersonne 1458226 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_1
+:nombreMasculin_1 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Masculin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                        :nombrePersonne 1186016 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_10
+:nombreMasculin_10 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                         :nombrePersonne 166456 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_100
+:nombreMasculin_100 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                          :nombrePersonne 44488 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_101
+:nombreMasculin_101 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                          :nombrePersonne 37071 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_102
+:nombreMasculin_102 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                          :nombrePersonne 1692643 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_103
+:nombreMasculin_103 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                          :nombrePersonne 1455491 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_104
+:nombreMasculin_104 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                          :nombrePersonne 1230136 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_105
+:nombreMasculin_105 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                          :nombrePersonne 962191 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_106
+:nombreMasculin_106 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                          :nombrePersonne 715260 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_107
+:nombreMasculin_107 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                          :nombrePersonne 523129 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_108
+:nombreMasculin_108 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                          :nombrePersonne 421714 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_109
+:nombreMasculin_109 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                          :nombrePersonne 366991 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_11
+:nombreMasculin_11 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                         :nombrePersonne 133273 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_110
+:nombreMasculin_110 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                          :nombrePersonne 291518 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_111
+:nombreMasculin_111 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                          :nombrePersonne 249216 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_112
+:nombreMasculin_112 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                          :nombrePersonne 192854 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_113
+:nombreMasculin_113 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                          :nombrePersonne 158413 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_114
+:nombreMasculin_114 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                          :nombrePersonne 119698 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_115
+:nombreMasculin_115 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                          :nombrePersonne 100878 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_116
+:nombreMasculin_116 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                          :nombrePersonne 64467 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_117
+:nombreMasculin_117 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                          :nombrePersonne 45722 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_118
+:nombreMasculin_118 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                          :nombrePersonne 37509 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_119
+:nombreMasculin_119 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                          :nombrePersonne 1727798 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_12
+:nombreMasculin_12 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                         :nombrePersonne 114040 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_120
+:nombreMasculin_120 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                          :nombrePersonne 1495367 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_121
+:nombreMasculin_121 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                          :nombrePersonne 1279388 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_122
+:nombreMasculin_122 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                          :nombrePersonne 1007291 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_123
+:nombreMasculin_123 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                          :nombrePersonne 747367 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_124
+:nombreMasculin_124 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                          :nombrePersonne 548045 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_125
+:nombreMasculin_125 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                          :nombrePersonne 426955 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_126
+:nombreMasculin_126 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                          :nombrePersonne 377591 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_127
+:nombreMasculin_127 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                          :nombrePersonne 300004 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_128
+:nombreMasculin_128 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                          :nombrePersonne 255406 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_129
+:nombreMasculin_129 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                          :nombrePersonne 200660 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_13
+:nombreMasculin_13 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                         :nombrePersonne 81678 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_130
+:nombreMasculin_130 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                          :nombrePersonne 161682 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_131
+:nombreMasculin_131 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                          :nombrePersonne 123614 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_132
+:nombreMasculin_132 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                          :nombrePersonne 101732 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_133
+:nombreMasculin_133 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                          :nombrePersonne 67215 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_134
+:nombreMasculin_134 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                          :nombrePersonne 45504 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_135
+:nombreMasculin_135 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                          :nombrePersonne 38637 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_136
+:nombreMasculin_136 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                          :nombrePersonne 1764318 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_137
+:nombreMasculin_137 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                          :nombrePersonne 1537649 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_138
+:nombreMasculin_138 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                          :nombrePersonne 1322364 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_139
+:nombreMasculin_139 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                          :nombrePersonne 1054319 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_14
+:nombreMasculin_14 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                         :nombrePersonne 63055 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_140
+:nombreMasculin_140 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                          :nombrePersonne 781507 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_141
+:nombreMasculin_141 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                          :nombrePersonne 575412 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_142
+:nombreMasculin_142 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                          :nombrePersonne 434498 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_143
+:nombreMasculin_143 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                          :nombrePersonne 387313 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_144
+:nombreMasculin_144 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                          :nombrePersonne 310028 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_145
+:nombreMasculin_145 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                          :nombrePersonne 261159 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_146
+:nombreMasculin_146 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                          :nombrePersonne 208575 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_147
+:nombreMasculin_147 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                          :nombrePersonne 165568 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_148
+:nombreMasculin_148 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                          :nombrePersonne 127564 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_149
+:nombreMasculin_149 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                          :nombrePersonne 102359 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_15
+:nombreMasculin_15 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                         :nombrePersonne 36882 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_150
+:nombreMasculin_150 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                          :nombrePersonne 70048 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_151
+:nombreMasculin_151 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                          :nombrePersonne 45713 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_152
+:nombreMasculin_152 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                          :nombrePersonne 39510 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_153
+:nombreMasculin_153 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                          :nombrePersonne 1801439 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_154
+:nombreMasculin_154 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                          :nombrePersonne 1579270 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_155
+:nombreMasculin_155 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                          :nombrePersonne 1362875 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_156
+:nombreMasculin_156 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                          :nombrePersonne 1103007 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_157
+:nombreMasculin_157 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                          :nombrePersonne 819089 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_158
+:nombreMasculin_158 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                          :nombrePersonne 602864 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_159
+:nombreMasculin_159 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                          :nombrePersonne 446597 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_16
+:nombreMasculin_16 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                         :nombrePersonne 38153 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_160
+:nombreMasculin_160 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                          :nombrePersonne 394465 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_161
+:nombreMasculin_161 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                          :nombrePersonne 321898 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_162
+:nombreMasculin_162 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                          :nombrePersonne 266800 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_163
+:nombreMasculin_163 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                          :nombrePersonne 216418 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_164
+:nombreMasculin_164 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                          :nombrePersonne 170086 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_165
+:nombreMasculin_165 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                          :nombrePersonne 131763 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_166
+:nombreMasculin_166 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                          :nombrePersonne 102575 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_167
+:nombreMasculin_167 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                          :nombrePersonne 73416 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_168
+:nombreMasculin_168 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                          :nombrePersonne 45723 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_169
+:nombreMasculin_169 rdf:type owl:NamedIndividual ,
+                                   :NombreDePersonne ;
+                          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> ;
+                          :aPourSexe :Masculin ;
+                          :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                          :nombrePersonne 40520 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_17
+:nombreMasculin_17 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                         :nombrePersonne 1499793 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_18
+:nombreMasculin_18 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                         :nombrePersonne 1236776 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_19
+:nombreMasculin_19 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                         :nombrePersonne 988126 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_2
+:nombreMasculin_2 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Masculin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                        :nombrePersonne 944825 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_20
+:nombreMasculin_20 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                         :nombrePersonne 774081 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_21
+:nombreMasculin_21 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                         :nombrePersonne 579080 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_22
+:nombreMasculin_22 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                         :nombrePersonne 455063 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_23
+:nombreMasculin_23 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                         :nombrePersonne 389101 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_24
+:nombreMasculin_24 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                         :nombrePersonne 308106 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_25
+:nombreMasculin_25 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                         :nombrePersonne 263840 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_26
+:nombreMasculin_26 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                         :nombrePersonne 206387 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_27
+:nombreMasculin_27 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                         :nombrePersonne 172330 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_28
+:nombreMasculin_28 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                         :nombrePersonne 133841 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_29
+:nombreMasculin_29 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                         :nombrePersonne 118221 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_3
+:nombreMasculin_3 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Masculin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                        :nombrePersonne 745413 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_30
+:nombreMasculin_30 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                         :nombrePersonne 81902 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_31
+:nombreMasculin_31 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                         :nombrePersonne 64975 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_32
+:nombreMasculin_32 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                         :nombrePersonne 37101 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_33
+:nombreMasculin_33 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                         :nombrePersonne 38112 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_34
+:nombreMasculin_34 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                         :nombrePersonne 1539590 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_35
+:nombreMasculin_35 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                         :nombrePersonne 1286212 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_36
+:nombreMasculin_36 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                         :nombrePersonne 1033413 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_37
+:nombreMasculin_37 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                         :nombrePersonne 806203 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_38
+:nombreMasculin_38 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                         :nombrePersonne 604338 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_39
+:nombreMasculin_39 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                         :nombrePersonne 460181 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_4
+:nombreMasculin_4 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Masculin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                        :nombrePersonne 554899 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_40
+:nombreMasculin_40 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                         :nombrePersonne 399807 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_41
+:nombreMasculin_41 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                         :nombrePersonne 316619 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_42
+:nombreMasculin_42 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                         :nombrePersonne 270162 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_43
+:nombreMasculin_43 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                         :nombrePersonne 214361 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_44
+:nombreMasculin_44 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                         :nombrePersonne 175796 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_45
+:nombreMasculin_45 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                         :nombrePersonne 137821 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_46
+:nombreMasculin_46 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                         :nombrePersonne 119359 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_47
+:nombreMasculin_47 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                         :nombrePersonne 84817 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_48
+:nombreMasculin_48 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                         :nombrePersonne 64931 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_49
+:nombreMasculin_49 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                         :nombrePersonne 38686 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_5
+:nombreMasculin_5 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Masculin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                        :nombrePersonne 452961 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_50
+:nombreMasculin_50 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                         :nombrePersonne 37837 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_51
+:nombreMasculin_51 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                         :nombrePersonne 1581637 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_52
+:nombreMasculin_52 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                         :nombrePersonne 1329311 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_53
+:nombreMasculin_53 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                         :nombrePersonne 1080627 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_54
+:nombreMasculin_54 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                         :nombrePersonne 840365 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_55
+:nombreMasculin_55 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                         :nombrePersonne 632069 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_56
+:nombreMasculin_56 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                         :nombrePersonne 467657 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_57
+:nombreMasculin_57 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                         :nombrePersonne 409579 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_58
+:nombreMasculin_58 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                         :nombrePersonne 326732 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_59
+:nombreMasculin_59 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                         :nombrePersonne 275979 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_6
+:nombreMasculin_6 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Masculin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                        :nombrePersonne 375358 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_60
+:nombreMasculin_60 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                         :nombrePersonne 222525 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_61
+:nombreMasculin_61 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                         :nombrePersonne 179800 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_62
+:nombreMasculin_62 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                         :nombrePersonne 142021 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_63
+:nombreMasculin_63 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                         :nombrePersonne 120005 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_64
+:nombreMasculin_64 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                         :nombrePersonne 88139 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_65
+:nombreMasculin_65 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                         :nombrePersonne 65056 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_66
+:nombreMasculin_66 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                         :nombrePersonne 40249 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_67
+:nombreMasculin_67 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                         :nombrePersonne 37599 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_68
+:nombreMasculin_68 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                         :nombrePersonne 1622950 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_69
+:nombreMasculin_69 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                         :nombrePersonne 1369882 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_7
+:nombreMasculin_7 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Masculin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                        :nombrePersonne 302637 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_70
+:nombreMasculin_70 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                         :nombrePersonne 1129501 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_71
+:nombreMasculin_71 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                         :nombrePersonne 877969 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_72
+:nombreMasculin_72 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                         :nombrePersonne 659902 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_73
+:nombreMasculin_73 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                         :nombrePersonne 479745 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_74
+:nombreMasculin_74 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                         :nombrePersonne 416735 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_75
+:nombreMasculin_75 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                         :nombrePersonne 338731 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_76
+:nombreMasculin_76 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                         :nombrePersonne 281669 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_77
+:nombreMasculin_77 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                         :nombrePersonne 230612 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_78
+:nombreMasculin_78 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                         :nombrePersonne 184478 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_79
+:nombreMasculin_79 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                         :nombrePersonne 146500 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_8
+:nombreMasculin_8 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Masculin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                        :nombrePersonne 254751 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_80
+:nombreMasculin_80 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                         :nombrePersonne 120152 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_81
+:nombreMasculin_81 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                         :nombrePersonne 92105 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_82
+:nombreMasculin_82 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                         :nombrePersonne 64975 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_83
+:nombreMasculin_83 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> ;
+                         :nombrePersonne 42031 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_84
+:nombreMasculin_84 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> ;
+                         :nombrePersonne 37387 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_85
+:nombreMasculin_85 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> ;
+                         :nombrePersonne 1657434 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_86
+:nombreMasculin_86 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> ;
+                         :nombrePersonne 1414132 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_87
+:nombreMasculin_87 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> ;
+                         :nombrePersonne 1179589 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_88
+:nombreMasculin_88 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> ;
+                         :nombrePersonne 919076 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_89
+:nombreMasculin_89 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> ;
+                         :nombrePersonne 686598 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_9
+:nombreMasculin_9 rdf:type owl:NamedIndividual ,
+                                 :NombreDePersonne ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> ;
+                        :aPourSexe :Masculin ;
+                        :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                        :nombrePersonne 201474 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_90
+:nombreMasculin_90 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> ;
+                         :nombrePersonne 499240 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_91
+:nombreMasculin_91 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> ;
+                         :nombrePersonne 419470 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_92
+:nombreMasculin_92 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> ;
+                         :nombrePersonne 353410 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_93
+:nombreMasculin_93 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> ;
+                         :nombrePersonne 286023 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_94
+:nombreMasculin_94 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> ;
+                         :nombrePersonne 240344 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_95
+:nombreMasculin_95 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> ;
+                         :nombrePersonne 188007 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_96
+:nombreMasculin_96 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> ;
+                         :nombrePersonne 152865 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_97
+:nombreMasculin_97 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> ;
+                         :nombrePersonne 118922 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_98
+:nombreMasculin_98 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> ;
+                         :nombrePersonne 97334 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#nombreMasculin_99
+:nombreMasculin_99 rdf:type owl:NamedIndividual ,
+                                  :NombreDePersonne ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> ;
+                         :aPourSexe :Masculin ;
+                         :aPourTranche <http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> ;
+                         :nombrePersonne 63964 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#0_à_4_ans> rdf:type owl:NamedIndividual ,
+                                                                                   :TrancheAge ;
+                                                                          :tranche "0 à 4"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#10_à_14_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "10 à 14"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#15_à_19_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "15 à 19"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#20_à_24_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "20 à 24"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2008> rdf:type owl:NamedIndividual ,
+                                                                              :Annee ;
+                                                                     :anneeValeur 2008 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2009> rdf:type owl:NamedIndividual ,
+                                                                              :Annee ;
+                                                                     :anneeValeur 2009 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2010> rdf:type owl:NamedIndividual ,
+                                                                              :Annee ;
+                                                                     :anneeValeur 2010 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2011> rdf:type owl:NamedIndividual ,
+                                                                              :Annee ;
+                                                                     :anneeValeur 2011 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2012> rdf:type owl:NamedIndividual ,
+                                                                              :Annee ;
+                                                                     :anneeValeur 2012 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2013> rdf:type owl:NamedIndividual ,
+                                                                              :Annee ;
+                                                                     :anneeValeur 2013 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2014> rdf:type owl:NamedIndividual ,
+                                                                              :Annee ;
+                                                                     :anneeValeur 2014 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2015> rdf:type owl:NamedIndividual ,
+                                                                              :Annee ;
+                                                                     :anneeValeur 2015 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2016> rdf:type owl:NamedIndividual ,
+                                                                              :Annee ;
+                                                                     :anneeValeur 2016 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#2017> rdf:type owl:NamedIndividual ,
+                                                                              :Annee ;
+                                                                     :anneeValeur 2017 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#25_à_29_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "25 à 29"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#30_à_34_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "30 à 34"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#35_à_39_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "35 à 39"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#40_à_44_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "40 à 44"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#45_à_49_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "45 à 49"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#5_à_9_ans> rdf:type owl:NamedIndividual ,
+                                                                                   :TrancheAge ;
+                                                                          :tranche "5 à 9"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#50_à_54_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "50 à 54"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#55_à_59_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "55 à 59"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#60_à_64_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "60 à 64"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#65_à_69_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "65 à 69"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#70_à_74_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "70 à 74"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#75_à_79_ans> rdf:type owl:NamedIndividual ,
+                                                                                     :TrancheAge ;
+                                                                            :tranche "75 à 79"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_plus
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_plus> rdf:type owl:NamedIndividual ,
+                                                                                        :TrancheAge ;
+                                                                               :tranche "80 et plus"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+
+<http://www.semanticweb.org/abou/pnpdo/populationParTrancheAge#80_ans_et_+> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Annee
+                :NombreDePersonne
+                :Sexe
+                :TrancheAge
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

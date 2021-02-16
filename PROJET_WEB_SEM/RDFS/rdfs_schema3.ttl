@@ -1,0 +1,23 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+<http://www.semanticweb.org/ozias/pnpdo/schema#EvolutionPointDEauModerne>
+	a rdfs:Class;
+	rdfs:subClassOf <http://www.semanticweb.org/ozias/pnpdo/schema#Distribution>
+	rdfs:comment "La classe decrivant l'évolution du nombre de points d'eau modernes au burkina faso".
+
+<http://www.semanticweb.org/ozias/pnpdo/shema#Annee>
+	a rdfs:Class;
+	rdfs:comment "La classe Annee" ;
+	rdfs:subClassOf <http://www.semanticweb.org/ozias/pnpdo/schema#AttributDeDonnee> .
+
+<http://www.semanticweb.org/ozias/pnpdo/shema#NombrePointDEau>
+	a rdfs:Class;
+	rdfs:comment "La classe nombre de point d'eau modernes" ;
+	rdfs:subClassOf <http://www.semanticweb.org/ozias/pnpdo/schema#Donnee> .
+
+<http://www.semanticweb.org/ozias/pnpdo/schema#pourAnnee>
+	a rdf:Property;
+	rdfs:range<http://www.semanticweb.org/ozias/pnpdo/schema#Annee> ;
+	rdfs:domain<http://www.semanticweb.org/ozias/pnpdo/schema#NombrePointDEau> 
+

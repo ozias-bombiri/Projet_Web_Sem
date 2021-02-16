@@ -1,0 +1,1263 @@
+@prefix : <http://www.semanticweb.org/abou/pnpdo/ProductionEau#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/abou/pnpdo/ProductionEau> .
+
+<http://www.semanticweb.org/abou/pnpdo/ProductionEau> rdf:type owl:Ontology ;
+                                                       owl:versionIRI <http://www.semanticweb.org/abou/pnpdo/ProductionEau> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#aPourAnnee
+:aPourAnnee rdf:type owl:ObjectProperty ;
+            rdfs:domain :Quantite ;
+            rdfs:range :Annee .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#aPourRegion
+:aPourRegion rdf:type owl:ObjectProperty ;
+             rdfs:domain :Quantite ;
+             rdfs:range :Region .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#nomRegion
+:nomRegion rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Region ;
+           rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#quantiteEau
+:quantiteEau rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#valeurAnnee
+:valeurAnnee rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Annee
+:Annee rdf:type owl:Class ;
+       owl:disjointWith :Region .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Quantite
+:Quantite rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Region
+:Region rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Boucle_du_Mouhoun
+:Boucle_du_Mouhoun rdf:type owl:NamedIndividual ,
+                            :Region ;
+                   :nomRegion "Boucle du Mouhoun"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Boucle_du_Mouhoun20011
+:Boucle_du_Mouhoun20011 rdf:type owl:NamedIndividual ,
+                                 :Quantite ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> ;
+                        :aPourRegion :Boucle_du_Mouhoun ;
+                        :quantiteEau 640 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Boucle_du_Mouhoun20022
+:Boucle_du_Mouhoun20022 rdf:type owl:NamedIndividual ,
+                                 :Quantite ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> ;
+                        :aPourRegion :Boucle_du_Mouhoun ;
+                        :quantiteEau 640 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Boucle_du_Mouhoun20033
+:Boucle_du_Mouhoun20033 rdf:type owl:NamedIndividual ,
+                                 :Quantite ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> ;
+                        :aPourRegion :Boucle_du_Mouhoun ;
+                        :quantiteEau 632 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Boucle_du_Mouhoun20044
+:Boucle_du_Mouhoun20044 rdf:type owl:NamedIndividual ,
+                                 :Quantite ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> ;
+                        :aPourRegion :Boucle_du_Mouhoun ;
+                        :quantiteEau 674 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Boucle_du_Mouhoun20055
+:Boucle_du_Mouhoun20055 rdf:type owl:NamedIndividual ,
+                                 :Quantite ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> ;
+                        :aPourRegion :Boucle_du_Mouhoun ;
+                        :quantiteEau 696 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Boucle_du_Mouhoun20066
+:Boucle_du_Mouhoun20066 rdf:type owl:NamedIndividual ,
+                                 :Quantite ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> ;
+                        :aPourRegion :Boucle_du_Mouhoun ;
+                        :quantiteEau 785 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Boucle_du_Mouhoun20107
+:Boucle_du_Mouhoun20107 rdf:type owl:NamedIndividual ,
+                                 :Quantite ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> ;
+                        :aPourRegion :Boucle_du_Mouhoun ;
+                        :quantiteEau 5485 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Boucle_du_Mouhoun20118
+:Boucle_du_Mouhoun20118 rdf:type owl:NamedIndividual ,
+                                 :Quantite ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> ;
+                        :aPourRegion :Boucle_du_Mouhoun ;
+                        :quantiteEau 3527 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Boucle_du_Mouhoun20149
+:Boucle_du_Mouhoun20149 rdf:type owl:NamedIndividual ,
+                                 :Quantite ;
+                        :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> ;
+                        :aPourRegion :Boucle_du_Mouhoun ;
+                        :quantiteEau 1819 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Boucle_du_Mouhoun201510
+:Boucle_du_Mouhoun201510 rdf:type owl:NamedIndividual ,
+                                  :Quantite ;
+                         :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> ;
+                         :aPourRegion :Boucle_du_Mouhoun ;
+                         :quantiteEau 2077 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Cascades
+:Cascades rdf:type owl:NamedIndividual ,
+                   :Region ;
+          :nomRegion "Cascades"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Cascades20011
+:Cascades20011 rdf:type owl:NamedIndividual ,
+                        :Quantite ;
+               :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> ;
+               :aPourRegion :Cascades ;
+               :quantiteEau 759 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Cascades20022
+:Cascades20022 rdf:type owl:NamedIndividual ,
+                        :Quantite ;
+               :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> ;
+               :aPourRegion :Cascades ;
+               :quantiteEau 817 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Cascades20033
+:Cascades20033 rdf:type owl:NamedIndividual ,
+                        :Quantite ;
+               :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> ;
+               :aPourRegion :Cascades ;
+               :quantiteEau 875 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Cascades20044
+:Cascades20044 rdf:type owl:NamedIndividual ,
+                        :Quantite ;
+               :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> ;
+               :aPourRegion :Cascades ;
+               :quantiteEau 909 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Cascades20055
+:Cascades20055 rdf:type owl:NamedIndividual ,
+                        :Quantite ;
+               :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> ;
+               :aPourRegion :Cascades ;
+               :quantiteEau 974 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Cascades20066
+:Cascades20066 rdf:type owl:NamedIndividual ,
+                        :Quantite ;
+               :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> ;
+               :aPourRegion :Cascades ;
+               :quantiteEau 1010 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Cascades20107
+:Cascades20107 rdf:type owl:NamedIndividual ,
+                        :Quantite ;
+               :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> ;
+               :aPourRegion :Cascades ;
+               :quantiteEau 4471 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Cascades20118
+:Cascades20118 rdf:type owl:NamedIndividual ,
+                        :Quantite ;
+               :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> ;
+               :aPourRegion :Cascades ;
+               :quantiteEau 5614 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Cascades20149
+:Cascades20149 rdf:type owl:NamedIndividual ,
+                        :Quantite ;
+               :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> ;
+               :aPourRegion :Cascades ;
+               :quantiteEau 1794 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Cascades201510
+:Cascades201510 rdf:type owl:NamedIndividual ,
+                         :Quantite ;
+                :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> ;
+                :aPourRegion :Cascades ;
+                :quantiteEau 1902 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre
+:Centre rdf:type owl:NamedIndividual ,
+                 :Region ;
+        :nomRegion "Centre"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Est
+:Centre-Est rdf:type owl:NamedIndividual ,
+                     :Region ;
+            :nomRegion "Centre-Est"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Est20011
+:Centre-Est20011 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> ;
+                 :aPourRegion :Centre-Est ;
+                 :quantiteEau 994 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Est20022
+:Centre-Est20022 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> ;
+                 :aPourRegion :Centre-Est ;
+                 :quantiteEau 1061 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Est20033
+:Centre-Est20033 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> ;
+                 :aPourRegion :Centre-Est ;
+                 :quantiteEau 1003 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Est20044
+:Centre-Est20044 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> ;
+                 :aPourRegion :Centre-Est ;
+                 :quantiteEau 1056 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Est20055
+:Centre-Est20055 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> ;
+                 :aPourRegion :Centre-Est ;
+                 :quantiteEau 1066 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Est20066
+:Centre-Est20066 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> ;
+                 :aPourRegion :Centre-Est ;
+                 :quantiteEau 1120 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Est20107
+:Centre-Est20107 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> ;
+                 :aPourRegion :Centre-Est ;
+                 :quantiteEau 4918 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Est20118
+:Centre-Est20118 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> ;
+                 :aPourRegion :Centre-Est ;
+                 :quantiteEau 5530 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Est20149
+:Centre-Est20149 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> ;
+                 :aPourRegion :Centre-Est ;
+                 :quantiteEau 2116 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Est201510
+:Centre-Est201510 rdf:type owl:NamedIndividual ,
+                           :Quantite ;
+                  :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> ;
+                  :aPourRegion :Centre-Est ;
+                  :quantiteEau 1998 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Nord
+:Centre-Nord rdf:type owl:NamedIndividual ,
+                      :Region ;
+             :nomRegion "Centre-Nord"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Nord20011
+:Centre-Nord20011 rdf:type owl:NamedIndividual ,
+                           :Quantite ;
+                  :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> ;
+                  :aPourRegion :Centre-Nord ;
+                  :quantiteEau 381 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Nord20022
+:Centre-Nord20022 rdf:type owl:NamedIndividual ,
+                           :Quantite ;
+                  :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> ;
+                  :aPourRegion :Centre-Nord ;
+                  :quantiteEau 405 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Nord20033
+:Centre-Nord20033 rdf:type owl:NamedIndividual ,
+                           :Quantite ;
+                  :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> ;
+                  :aPourRegion :Centre-Nord ;
+                  :quantiteEau 429 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Nord20044
+:Centre-Nord20044 rdf:type owl:NamedIndividual ,
+                           :Quantite ;
+                  :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> ;
+                  :aPourRegion :Centre-Nord ;
+                  :quantiteEau 454 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Nord20055
+:Centre-Nord20055 rdf:type owl:NamedIndividual ,
+                           :Quantite ;
+                  :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> ;
+                  :aPourRegion :Centre-Nord ;
+                  :quantiteEau 480 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Nord20066
+:Centre-Nord20066 rdf:type owl:NamedIndividual ,
+                           :Quantite ;
+                  :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> ;
+                  :aPourRegion :Centre-Nord ;
+                  :quantiteEau 533 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Nord20107
+:Centre-Nord20107 rdf:type owl:NamedIndividual ,
+                           :Quantite ;
+                  :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> ;
+                  :aPourRegion :Centre-Nord ;
+                  :quantiteEau 4258 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Nord20118
+:Centre-Nord20118 rdf:type owl:NamedIndividual ,
+                           :Quantite ;
+                  :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> ;
+                  :aPourRegion :Centre-Nord ;
+                  :quantiteEau 4714 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Nord20149
+:Centre-Nord20149 rdf:type owl:NamedIndividual ,
+                           :Quantite ;
+                  :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> ;
+                  :aPourRegion :Centre-Nord ;
+                  :quantiteEau 1489 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Nord201510
+:Centre-Nord201510 rdf:type owl:NamedIndividual ,
+                            :Quantite ;
+                   :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> ;
+                   :aPourRegion :Centre-Nord ;
+                   :quantiteEau 1645 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Ouest
+:Centre-Ouest rdf:type owl:NamedIndividual ,
+                       :Region ;
+              :nomRegion "Centre-Ouest"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Ouest20011
+:Centre-Ouest20011 rdf:type owl:NamedIndividual ,
+                            :Quantite ;
+                   :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> ;
+                   :aPourRegion :Centre-Ouest ;
+                   :quantiteEau 1054 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Ouest20022
+:Centre-Ouest20022 rdf:type owl:NamedIndividual ,
+                            :Quantite ;
+                   :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> ;
+                   :aPourRegion :Centre-Ouest ;
+                   :quantiteEau 1257 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Ouest20033
+:Centre-Ouest20033 rdf:type owl:NamedIndividual ,
+                            :Quantite ;
+                   :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> ;
+                   :aPourRegion :Centre-Ouest ;
+                   :quantiteEau 1276 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Ouest20044
+:Centre-Ouest20044 rdf:type owl:NamedIndividual ,
+                            :Quantite ;
+                   :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> ;
+                   :aPourRegion :Centre-Ouest ;
+                   :quantiteEau 1351 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Ouest20055
+:Centre-Ouest20055 rdf:type owl:NamedIndividual ,
+                            :Quantite ;
+                   :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> ;
+                   :aPourRegion :Centre-Ouest ;
+                   :quantiteEau 1324 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Ouest20066
+:Centre-Ouest20066 rdf:type owl:NamedIndividual ,
+                            :Quantite ;
+                   :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> ;
+                   :aPourRegion :Centre-Ouest ;
+                   :quantiteEau 1409 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Ouest20107
+:Centre-Ouest20107 rdf:type owl:NamedIndividual ,
+                            :Quantite ;
+                   :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> ;
+                   :aPourRegion :Centre-Ouest ;
+                   :quantiteEau 11330 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Ouest20118
+:Centre-Ouest20118 rdf:type owl:NamedIndividual ,
+                            :Quantite ;
+                   :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> ;
+                   :aPourRegion :Centre-Ouest ;
+                   :quantiteEau 8879 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Ouest20149
+:Centre-Ouest20149 rdf:type owl:NamedIndividual ,
+                            :Quantite ;
+                   :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> ;
+                   :aPourRegion :Centre-Ouest ;
+                   :quantiteEau 2702 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Ouest201510
+:Centre-Ouest201510 rdf:type owl:NamedIndividual ,
+                             :Quantite ;
+                    :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> ;
+                    :aPourRegion :Centre-Ouest ;
+                    :quantiteEau 3124 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Sud
+:Centre-Sud rdf:type owl:NamedIndividual ,
+                     :Region ;
+            :nomRegion "Centre-Sud"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Sud20011
+:Centre-Sud20011 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> ;
+                 :aPourRegion :Centre-Sud ;
+                 :quantiteEau 293 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Sud20022
+:Centre-Sud20022 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> ;
+                 :aPourRegion :Centre-Sud ;
+                 :quantiteEau 298 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Sud20033
+:Centre-Sud20033 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> ;
+                 :aPourRegion :Centre-Sud ;
+                 :quantiteEau 328 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Sud20044
+:Centre-Sud20044 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> ;
+                 :aPourRegion :Centre-Sud ;
+                 :quantiteEau 373 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Sud20055
+:Centre-Sud20055 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> ;
+                 :aPourRegion :Centre-Sud ;
+                 :quantiteEau 386 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Sud20066
+:Centre-Sud20066 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> ;
+                 :aPourRegion :Centre-Sud ;
+                 :quantiteEau 421 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Sud20107
+:Centre-Sud20107 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> ;
+                 :aPourRegion :Centre-Sud ;
+                 :quantiteEau 1868 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Sud20118
+:Centre-Sud20118 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> ;
+                 :aPourRegion :Centre-Sud ;
+                 :quantiteEau 2175 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Sud20149
+:Centre-Sud20149 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> ;
+                 :aPourRegion :Centre-Sud ;
+                 :quantiteEau 681 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre-Sud201510
+:Centre-Sud201510 rdf:type owl:NamedIndividual ,
+                           :Quantite ;
+                  :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> ;
+                  :aPourRegion :Centre-Sud ;
+                  :quantiteEau 778 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre20011
+:Centre20011 rdf:type owl:NamedIndividual ,
+                      :Quantite ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> ;
+             :aPourRegion :Centre ;
+             :quantiteEau 17675 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre20022
+:Centre20022 rdf:type owl:NamedIndividual ,
+                      :Quantite ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> ;
+             :aPourRegion :Centre ;
+             :quantiteEau 17988 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre20033
+:Centre20033 rdf:type owl:NamedIndividual ,
+                      :Quantite ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> ;
+             :aPourRegion :Centre ;
+             :quantiteEau 18780 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre20044
+:Centre20044 rdf:type owl:NamedIndividual ,
+                      :Quantite ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> ;
+             :aPourRegion :Centre ;
+             :quantiteEau 21486 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre20055
+:Centre20055 rdf:type owl:NamedIndividual ,
+                      :Quantite ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> ;
+             :aPourRegion :Centre ;
+             :quantiteEau 25084 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre20066
+:Centre20066 rdf:type owl:NamedIndividual ,
+                      :Quantite ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> ;
+             :aPourRegion :Centre ;
+             :quantiteEau 27167 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre20107
+:Centre20107 rdf:type owl:NamedIndividual ,
+                      :Quantite ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> ;
+             :aPourRegion :Centre ;
+             :quantiteEau 120030 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre20118
+:Centre20118 rdf:type owl:NamedIndividual ,
+                      :Quantite ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> ;
+             :aPourRegion :Centre ;
+             :quantiteEau 158365 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre20149
+:Centre20149 rdf:type owl:NamedIndividual ,
+                      :Quantite ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> ;
+             :aPourRegion :Centre ;
+             :quantiteEau 13049 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Centre201510
+:Centre201510 rdf:type owl:NamedIndividual ,
+                       :Quantite ;
+              :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> ;
+              :aPourRegion :Centre ;
+              :quantiteEau 13468 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Est
+:Est rdf:type owl:NamedIndividual ,
+              :Region ;
+     :nomRegion "Est"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Est20011
+:Est20011 rdf:type owl:NamedIndividual ,
+                   :Quantite ;
+          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> ;
+          :aPourRegion :Est ;
+          :quantiteEau 248 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Est20022
+:Est20022 rdf:type owl:NamedIndividual ,
+                   :Quantite ;
+          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> ;
+          :aPourRegion :Est ;
+          :quantiteEau 323 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Est20033
+:Est20033 rdf:type owl:NamedIndividual ,
+                   :Quantite ;
+          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> ;
+          :aPourRegion :Est ;
+          :quantiteEau 287 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Est20044
+:Est20044 rdf:type owl:NamedIndividual ,
+                   :Quantite ;
+          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> ;
+          :aPourRegion :Est ;
+          :quantiteEau 316 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Est20055
+:Est20055 rdf:type owl:NamedIndividual ,
+                   :Quantite ;
+          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> ;
+          :aPourRegion :Est ;
+          :quantiteEau 349 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Est20066
+:Est20066 rdf:type owl:NamedIndividual ,
+                   :Quantite ;
+          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> ;
+          :aPourRegion :Est ;
+          :quantiteEau 373 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Est20107
+:Est20107 rdf:type owl:NamedIndividual ,
+                   :Quantite ;
+          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> ;
+          :aPourRegion :Est ;
+          :quantiteEau 3177 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Est20118
+:Est20118 rdf:type owl:NamedIndividual ,
+                   :Quantite ;
+          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> ;
+          :aPourRegion :Est ;
+          :quantiteEau 2502 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Est20149
+:Est20149 rdf:type owl:NamedIndividual ,
+                   :Quantite ;
+          :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> ;
+          :aPourRegion :Est ;
+          :quantiteEau 1099 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Est201510
+:Est201510 rdf:type owl:NamedIndividual ,
+                    :Quantite ;
+           :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> ;
+           :aPourRegion :Est ;
+           :quantiteEau 1270 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Hauts-Bassins
+:Hauts-Bassins rdf:type owl:NamedIndividual ,
+                        :Region ;
+               :nomRegion "Hauts-Bassins"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Hauts-Bassins20011
+:Hauts-Bassins20011 rdf:type owl:NamedIndividual ,
+                             :Quantite ;
+                    :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> ;
+                    :aPourRegion :Hauts-Bassins ;
+                    :quantiteEau 7312 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Hauts-Bassins20022
+:Hauts-Bassins20022 rdf:type owl:NamedIndividual ,
+                             :Quantite ;
+                    :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> ;
+                    :aPourRegion :Hauts-Bassins ;
+                    :quantiteEau 7485 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Hauts-Bassins20033
+:Hauts-Bassins20033 rdf:type owl:NamedIndividual ,
+                             :Quantite ;
+                    :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> ;
+                    :aPourRegion :Hauts-Bassins ;
+                    :quantiteEau 7750 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Hauts-Bassins20044
+:Hauts-Bassins20044 rdf:type owl:NamedIndividual ,
+                             :Quantite ;
+                    :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> ;
+                    :aPourRegion :Hauts-Bassins ;
+                    :quantiteEau 8588 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Hauts-Bassins20055
+:Hauts-Bassins20055 rdf:type owl:NamedIndividual ,
+                             :Quantite ;
+                    :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> ;
+                    :aPourRegion :Hauts-Bassins ;
+                    :quantiteEau 9070 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Hauts-Bassins20066
+:Hauts-Bassins20066 rdf:type owl:NamedIndividual ,
+                             :Quantite ;
+                    :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> ;
+                    :aPourRegion :Hauts-Bassins ;
+                    :quantiteEau 9672 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Hauts-Bassins20107
+:Hauts-Bassins20107 rdf:type owl:NamedIndividual ,
+                             :Quantite ;
+                    :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> ;
+                    :aPourRegion :Hauts-Bassins ;
+                    :quantiteEau 42244 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Hauts-Bassins20118
+:Hauts-Bassins20118 rdf:type owl:NamedIndividual ,
+                             :Quantite ;
+                    :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> ;
+                    :aPourRegion :Hauts-Bassins ;
+                    :quantiteEau 38316 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Hauts-Bassins20149
+:Hauts-Bassins20149 rdf:type owl:NamedIndividual ,
+                             :Quantite ;
+                    :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> ;
+                    :aPourRegion :Hauts-Bassins ;
+                    :quantiteEau 15212 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Hauts-Bassins201510
+:Hauts-Bassins201510 rdf:type owl:NamedIndividual ,
+                              :Quantite ;
+                     :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> ;
+                     :aPourRegion :Hauts-Bassins ;
+                     :quantiteEau 16161 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Nord
+:Nord rdf:type owl:NamedIndividual ,
+               :Region ;
+      :nomRegion "Nord"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Nord20011
+:Nord20011 rdf:type owl:NamedIndividual ,
+                    :Quantite ;
+           :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> ;
+           :aPourRegion :Nord ;
+           :quantiteEau 884 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Nord20022
+:Nord20022 rdf:type owl:NamedIndividual ,
+                    :Quantite ;
+           :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> ;
+           :aPourRegion :Nord ;
+           :quantiteEau 1019 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Nord20033
+:Nord20033 rdf:type owl:NamedIndividual ,
+                    :Quantite ;
+           :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> ;
+           :aPourRegion :Nord ;
+           :quantiteEau 947 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Nord20044
+:Nord20044 rdf:type owl:NamedIndividual ,
+                    :Quantite ;
+           :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> ;
+           :aPourRegion :Nord ;
+           :quantiteEau 1150 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Nord20055
+:Nord20055 rdf:type owl:NamedIndividual ,
+                    :Quantite ;
+           :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> ;
+           :aPourRegion :Nord ;
+           :quantiteEau 1058 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Nord20066
+:Nord20066 rdf:type owl:NamedIndividual ,
+                    :Quantite ;
+           :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> ;
+           :aPourRegion :Nord ;
+           :quantiteEau 1214 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Nord20107
+:Nord20107 rdf:type owl:NamedIndividual ,
+                    :Quantite ;
+           :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> ;
+           :aPourRegion :Nord ;
+           :quantiteEau 5288 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Nord20118
+:Nord20118 rdf:type owl:NamedIndividual ,
+                    :Quantite ;
+           :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> ;
+           :aPourRegion :Nord ;
+           :quantiteEau 4911 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Nord20149
+:Nord20149 rdf:type owl:NamedIndividual ,
+                    :Quantite ;
+           :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> ;
+           :aPourRegion :Nord ;
+           :quantiteEau 1935 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Nord201510
+:Nord201510 rdf:type owl:NamedIndividual ,
+                     :Quantite ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> ;
+            :aPourRegion :Nord ;
+            :quantiteEau 1925 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Plateau_Central
+:Plateau_Central rdf:type owl:NamedIndividual ,
+                          :Region ;
+                 :nomRegion "Plateau Central"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Plateau_Central20011
+:Plateau_Central20011 rdf:type owl:NamedIndividual ,
+                               :Quantite ;
+                      :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> ;
+                      :aPourRegion :Plateau_Central ;
+                      :quantiteEau 0 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Plateau_Central20022
+:Plateau_Central20022 rdf:type owl:NamedIndividual ,
+                               :Quantite ;
+                      :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> ;
+                      :aPourRegion :Plateau_Central ;
+                      :quantiteEau 0 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Plateau_Central20033
+:Plateau_Central20033 rdf:type owl:NamedIndividual ,
+                               :Quantite ;
+                      :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> ;
+                      :aPourRegion :Plateau_Central ;
+                      :quantiteEau 35 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Plateau_Central20044
+:Plateau_Central20044 rdf:type owl:NamedIndividual ,
+                               :Quantite ;
+                      :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> ;
+                      :aPourRegion :Plateau_Central ;
+                      :quantiteEau 30 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Plateau_Central20055
+:Plateau_Central20055 rdf:type owl:NamedIndividual ,
+                               :Quantite ;
+                      :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> ;
+                      :aPourRegion :Plateau_Central ;
+                      :quantiteEau 77 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Plateau_Central20066
+:Plateau_Central20066 rdf:type owl:NamedIndividual ,
+                               :Quantite ;
+                      :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> ;
+                      :aPourRegion :Plateau_Central ;
+                      :quantiteEau 225 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Plateau_Central20107
+:Plateau_Central20107 rdf:type owl:NamedIndividual ,
+                               :Quantite ;
+                      :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> ;
+                      :aPourRegion :Plateau_Central ;
+                      :quantiteEau 461 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Plateau_Central20118
+:Plateau_Central20118 rdf:type owl:NamedIndividual ,
+                               :Quantite ;
+                      :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> ;
+                      :aPourRegion :Plateau_Central ;
+                      :quantiteEau 1841 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Plateau_Central20149
+:Plateau_Central20149 rdf:type owl:NamedIndividual ,
+                               :Quantite ;
+                      :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> ;
+                      :aPourRegion :Plateau_Central ;
+                      :quantiteEau 36040 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Plateau_Central201510
+:Plateau_Central201510 rdf:type owl:NamedIndividual ,
+                                :Quantite ;
+                       :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> ;
+                       :aPourRegion :Plateau_Central ;
+                       :quantiteEau 37477 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sahel
+:Sahel rdf:type owl:NamedIndividual ,
+                :Region ;
+       :nomRegion "Sahel"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sahel20011
+:Sahel20011 rdf:type owl:NamedIndividual ,
+                     :Quantite ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> ;
+            :aPourRegion :Sahel ;
+            :quantiteEau 387 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sahel20022
+:Sahel20022 rdf:type owl:NamedIndividual ,
+                     :Quantite ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> ;
+            :aPourRegion :Sahel ;
+            :quantiteEau 382 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sahel20033
+:Sahel20033 rdf:type owl:NamedIndividual ,
+                     :Quantite ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> ;
+            :aPourRegion :Sahel ;
+            :quantiteEau 423 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sahel20044
+:Sahel20044 rdf:type owl:NamedIndividual ,
+                     :Quantite ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> ;
+            :aPourRegion :Sahel ;
+            :quantiteEau 472 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sahel20055
+:Sahel20055 rdf:type owl:NamedIndividual ,
+                     :Quantite ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> ;
+            :aPourRegion :Sahel ;
+            :quantiteEau 459 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sahel20066
+:Sahel20066 rdf:type owl:NamedIndividual ,
+                     :Quantite ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> ;
+            :aPourRegion :Sahel ;
+            :quantiteEau 472 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sahel20107
+:Sahel20107 rdf:type owl:NamedIndividual ,
+                     :Quantite ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> ;
+            :aPourRegion :Sahel ;
+            :quantiteEau 3181 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sahel20118
+:Sahel20118 rdf:type owl:NamedIndividual ,
+                     :Quantite ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> ;
+            :aPourRegion :Sahel ;
+            :quantiteEau 2871 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sahel20149
+:Sahel20149 rdf:type owl:NamedIndividual ,
+                     :Quantite ;
+            :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> ;
+            :aPourRegion :Sahel ;
+            :quantiteEau 1040 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sahel201510
+:Sahel201510 rdf:type owl:NamedIndividual ,
+                      :Quantite ;
+             :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> ;
+             :aPourRegion :Sahel ;
+             :quantiteEau 1144 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sud-Ouest
+:Sud-Ouest rdf:type owl:NamedIndividual ,
+                    :Region ;
+           :nomRegion "Sud-Ouest"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sud-Ouest20011
+:Sud-Ouest20011 rdf:type owl:NamedIndividual ,
+                         :Quantite ;
+                :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> ;
+                :aPourRegion :Sud-Ouest ;
+                :quantiteEau 236 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sud-Ouest20022
+:Sud-Ouest20022 rdf:type owl:NamedIndividual ,
+                         :Quantite ;
+                :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> ;
+                :aPourRegion :Sud-Ouest ;
+                :quantiteEau 234 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sud-Ouest20033
+:Sud-Ouest20033 rdf:type owl:NamedIndividual ,
+                         :Quantite ;
+                :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> ;
+                :aPourRegion :Sud-Ouest ;
+                :quantiteEau 231 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sud-Ouest20044
+:Sud-Ouest20044 rdf:type owl:NamedIndividual ,
+                         :Quantite ;
+                :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> ;
+                :aPourRegion :Sud-Ouest ;
+                :quantiteEau 281 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sud-Ouest20055
+:Sud-Ouest20055 rdf:type owl:NamedIndividual ,
+                         :Quantite ;
+                :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> ;
+                :aPourRegion :Sud-Ouest ;
+                :quantiteEau 363 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sud-Ouest20066
+:Sud-Ouest20066 rdf:type owl:NamedIndividual ,
+                         :Quantite ;
+                :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> ;
+                :aPourRegion :Sud-Ouest ;
+                :quantiteEau 397 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sud-Ouest20107
+:Sud-Ouest20107 rdf:type owl:NamedIndividual ,
+                         :Quantite ;
+                :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> ;
+                :aPourRegion :Sud-Ouest ;
+                :quantiteEau 2008 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sud-Ouest20118
+:Sud-Ouest20118 rdf:type owl:NamedIndividual ,
+                         :Quantite ;
+                :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> ;
+                :aPourRegion :Sud-Ouest ;
+                :quantiteEau 1651 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sud-Ouest20149
+:Sud-Ouest20149 rdf:type owl:NamedIndividual ,
+                         :Quantite ;
+                :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> ;
+                :aPourRegion :Sud-Ouest ;
+                :quantiteEau 763 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#Sud-Ouest201510
+:Sud-Ouest201510 rdf:type owl:NamedIndividual ,
+                          :Quantite ;
+                 :aPourAnnee <http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> ;
+                 :aPourRegion :Sud-Ouest ;
+                 :quantiteEau 834 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001
+<http://www.semanticweb.org/abou/pnpdo/ProductionEau#2001> rdf:type owl:NamedIndividual ,
+                                                                    :Annee ;
+                                                           :valeurAnnee 2001 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002
+<http://www.semanticweb.org/abou/pnpdo/ProductionEau#2002> rdf:type owl:NamedIndividual ,
+                                                                    :Annee ;
+                                                           :valeurAnnee 2002 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003
+<http://www.semanticweb.org/abou/pnpdo/ProductionEau#2003> rdf:type owl:NamedIndividual ,
+                                                                    :Annee ;
+                                                           :valeurAnnee 2003 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004
+<http://www.semanticweb.org/abou/pnpdo/ProductionEau#2004> rdf:type owl:NamedIndividual ,
+                                                                    :Annee ;
+                                                           :valeurAnnee 2004 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005
+<http://www.semanticweb.org/abou/pnpdo/ProductionEau#2005> rdf:type owl:NamedIndividual ,
+                                                                    :Annee ;
+                                                           :valeurAnnee 2005 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006
+<http://www.semanticweb.org/abou/pnpdo/ProductionEau#2006> rdf:type owl:NamedIndividual ,
+                                                                    :Annee ;
+                                                           :valeurAnnee 2006 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010
+<http://www.semanticweb.org/abou/pnpdo/ProductionEau#2010> rdf:type owl:NamedIndividual ,
+                                                                    :Annee ;
+                                                           :valeurAnnee 2010 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011
+<http://www.semanticweb.org/abou/pnpdo/ProductionEau#2011> rdf:type owl:NamedIndividual ,
+                                                                    :Annee ;
+                                                           :valeurAnnee 2011 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014
+<http://www.semanticweb.org/abou/pnpdo/ProductionEau#2014> rdf:type owl:NamedIndividual ,
+                                                                    :Annee ;
+                                                           :valeurAnnee 2014 .
+
+
+###  http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015
+<http://www.semanticweb.org/abou/pnpdo/ProductionEau#2015> rdf:type owl:NamedIndividual ,
+                                                                    :Annee ;
+                                                           :valeurAnnee 2015 .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Annee
+                :Quantite
+                :Region
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

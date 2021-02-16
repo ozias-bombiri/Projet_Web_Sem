@@ -1,0 +1,1289 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ozias/pnpdo/schema#"
+     xml:base="http://www.semanticweb.org/ozias/pnpdo/schema"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:pnpdo="http://www.semanticweb.org/ozias/pnpdo#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0007 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0007">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0010"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+        <rdfs:label xml:lang="fr">aProduit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0008 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0008">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0005"/>
+        <rdfs:label xml:lang="fr">contient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0009 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0009">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+        <rdfs:label xml:lang="fr">appartenir</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0010 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0010">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">produitPar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0013 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0013">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">aPourTheme</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0106 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0106">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0044"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">estProvinceDe</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0191 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0191">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0006"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0012"/>
+        <rdfs:label xml:lang="fr">aPourUrlAcces</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0192 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0192">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0006"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0012"/>
+        <rdfs:label xml:lang="fr">aPoururlTelechargement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0194 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0194">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0005"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001"/>
+        <rdfs:label xml:lang="fr">estElementDataDe</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0204 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0204">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0203"/>
+        <rdfs:label xml:lang="fr">aPourSource</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0027 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0027">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+        <rdfs:label xml:lang="fr">titre</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0028 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0028">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0006"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="fr">description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0029 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0029">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0005"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0006"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="fr">identifiant</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0030 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0030">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="fr">dateCreation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0031 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0031">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="fr">dateModification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0032 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0032">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0006"/>
+        <rdfs:label xml:lang="fr">urlAcces</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0033 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0033">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0006"/>
+        <rdfs:label xml:lang="fr">urlTelechargement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0034 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0034">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0006"/>
+        <rdfs:label xml:lang="fr">mediaType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0035 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0035">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="fr">format</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0036 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0036">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001"/>
+        <rdfs:label xml:lang="fr">tailleOctet</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0037 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0037">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="fr">email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0038 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0038">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">telephone</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0039 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0039">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="fr">nom</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0040 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0040">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0003"/>
+        <rdfs:label xml:lang="fr">type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0041 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0041">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+        <rdfs:label xml:lang="fr">motCle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0047 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0047">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="fr">licence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0048 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0048">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="fr">niveauAcces</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0193 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0193">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0005"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="fr">valeurDeDonnee</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un jeu de données dans un format données (csv, xlsx, json, html, etc</rdfs:comment>
+        <rdfs:label xml:lang="fr">Distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Les producteurs de données du PNPDO</rdfs:comment>
+        <rdfs:label xml:lang="fr">Producteur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0003 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0003">
+        <rdfs:label xml:lang="fr">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Cette calsse sert à décrire les datasets de l&apos;ontologie</rdfs:comment>
+        <rdfs:label xml:lang="fr">JeuDeDonnees</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0005 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0005">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dscription d&apos;un valeur de données</rdfs:comment>
+        <rdfs:label xml:lang="fr">Donnee</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0006 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0006">
+        <rdfs:label xml:lang="fr">Resources</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0011 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0011">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Les types de média des fichiers de données associées au distribution</rdfs:comment>
+        <rdfs:label xml:lang="fr">MediaType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0012 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0012">
+        <rdfs:label xml:lang="fr">URL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0199"/>
+        <rdfs:label xml:lang="fr">Region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0044 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0044">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0199"/>
+        <rdfs:label xml:lang="fr">Province</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">La Classe Thème represente les différents thème des jeux de données</rdfs:comment>
+        <rdfs:label xml:lang="fr">Theme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0195 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0195">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Attibut de données représentat les différentes clases qu&apos;on peut avoir comme colonne dans les tables de données.</rdfs:comment>
+        <rdfs:label xml:lang="fr">AttributDeDonnee</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0196 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0196">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0195"/>
+        <rdfs:label xml:lang="fr">Temps</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0197 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0197">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0196"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0198"/>
+        <rdfs:label xml:lang="fr">Annee</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0198 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0198">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0196"/>
+        <rdfs:label xml:lang="fr">Date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0199 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0199">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0195"/>
+        <rdfs:label xml:lang="fr">Localite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0200 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0200">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0199"/>
+        <rdfs:label xml:lang="fr">Ville</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0201 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0201">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0199"/>
+        <rdfs:label xml:lang="fr">Village</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0202 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0202">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0195"/>
+        <rdfs:label xml:lang="fr">Age</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0203 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0203">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Décrire les informations sur les source de données</rdfs:comment>
+        <rdfs:label xml:lang="fr">SourceDeDonnees</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0014">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">BAD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0015">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">BM</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0016">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">CIESIN</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0017">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">CENI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0018 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0018">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">ISS</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0019 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0019">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">INSD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MASSN</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MATS</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0022 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0022">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MAAH</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MATD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0024">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MEA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0025 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0025">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MEFD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0026 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0026">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MENA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0042 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0042">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MEnergie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0045 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0045">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MESRSI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0046 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0046">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MHU</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0129 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0129">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MICA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0130 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0130">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MCT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0131 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0131">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MDefense</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0132 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0132">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MFPTSS</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0133 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0133">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MJFPE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0134 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0134">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MJustice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0135 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0135">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MPFG</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0136 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0136">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MRSI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0137 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0137">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MSante</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0138 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0138">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MEEVC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0139 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0139">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MDHPC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0140 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0140">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MIDT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0141 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0141">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MMC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0142 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0142">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MRAH</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0143 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0143">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MSL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0144 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0144">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">MDENP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0145 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0145">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">ONEDD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0146 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0146">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">OpenBurkina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0147 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0147">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">OpenStreetMap</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0148 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0148">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">PremierMinistere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0149 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0149">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">PresidenceDuFaso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0150 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0150">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">PACT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0151 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0151">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">PIF</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0152 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0152">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">SahelDataBank</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0153 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0153">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">SmartZogore</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0154 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0154">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">SONABEL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0155 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0155">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">WPDX</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0156 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0156">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+        <rdfs:label xml:lang="fr">WorldPop</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0157 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0157">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">EauEtEnvironnement</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0158 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0158">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">Agriculture</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0159 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0159">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">Sante</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0160 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0160">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">Transport</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0161 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0161">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">Education</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0162 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0162">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">Energie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0163 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0163">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">Demagraphie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0164 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0164">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">MinesEtCarrieres</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0165 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0165">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">Elevage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0166 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0166">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">JeunesseEtEmplois</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0167 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0167">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">EconomieEtFinances</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0168 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0168">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">Autre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0169 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0169">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">Industrie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0170 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0170">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">CollectiviteTerritoriale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0171 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0171">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">TICTelcomEtPostes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0172 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0172">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">TourismeEtCulture</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0173 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0173">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">Election</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0174 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0174">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">Infrastructures</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0175 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0175">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">SecuritePublique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0176 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0176">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">Securite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0177 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0177">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0107"/>
+        <rdfs:label xml:lang="fr">Communication</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0178 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0178">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">BoucleDuMouhoun</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0179 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0179">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">Cascades</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0180 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0180">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">Centre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0181 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0181">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">CentreEst</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0182 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0182">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">CentreNord</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0183 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0183">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">CentreOuest</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0184 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0184">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">CentreSud</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0185 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0185">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">Est</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0186 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0186">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">HautsBassins</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0187 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0187">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">Nord</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0188 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0188">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">PlateauCentral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0189 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0189">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">Sahel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0190 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0190">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+        <rdfs:label xml:lang="fr">SudOuest</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0001"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0002"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0003"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0004"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0006"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0043"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0044"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0200"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0201"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0196"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0199"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ozias/pnpdo/schema#Piz_0202"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

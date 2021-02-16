@@ -1,0 +1,1237 @@
+@prefix : <http://www.semanticweb.org/ozias/pnpdo/PuissanceEngRegion#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion> .
+
+<http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion> rdf:type owl:Ontology ;
+                                                            owl:versionIRI <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegionV1> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#aPourAnnee
+:aPourAnnee rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Puissance ;
+            rdfs:range :Annee ;
+            owl:propertyDisjointWith :aPourRegion ;
+            rdfs:label "aPourAnnee"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#aPourRegion
+:aPourRegion rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :Puissance ;
+             rdfs:range :Region ;
+             rdfs:label "aPourRegion"@fr .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#NomRegion
+:NomRegion rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:label "nomRegion"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#PuissanceEnMW
+:PuissanceEnMW rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:label "puissanceEnMW"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#valeurAnnee
+:valeurAnnee rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:label "valeurAnnee"@fr .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Annee
+:Annee rdf:type owl:Class ;
+       owl:disjointWith :Region ;
+       rdfs:label "Annee"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Puissance
+:Puissance rdf:type owl:Class ;
+           rdfs:label "Puissance"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Region
+:Region rdf:type owl:Class ;
+        rdfs:label "Region"@fr .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BM10
+:BM10 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+      :aPourRegion :BoucleMouhoun ;
+      :PuissanceEnMW 20 ;
+      rdfs:label "BM10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BM11
+:BM11 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+      :aPourRegion :BoucleMouhoun ;
+      :PuissanceEnMW 24.6 ;
+      rdfs:label "BM11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BM12
+:BM12 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+      :aPourRegion :BoucleMouhoun ;
+      :PuissanceEnMW 28 ;
+      rdfs:label "BM12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BM13
+:BM13 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+      :aPourRegion :BoucleMouhoun ;
+      :PuissanceEnMW 30.5 ;
+      rdfs:label "BM13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BM14
+:BM14 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+      :aPourRegion :BoucleMouhoun ;
+      :PuissanceEnMW 33.7 ;
+      rdfs:label "BM14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BM15
+:BM15 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+      :aPourRegion :BoucleMouhoun ;
+      :PuissanceEnMW 38.6 ;
+      rdfs:label "BM15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BM16
+:BM16 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+      :aPourRegion :BoucleMouhoun ;
+      :PuissanceEnMW 42.3 ;
+      rdfs:label "BM16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BM17
+:BM17 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+      :aPourRegion :BoucleMouhoun ;
+      :PuissanceEnMW 53.6 ;
+      rdfs:label "BM17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BoucleMouhoun
+:BoucleMouhoun rdf:type owl:NamedIndividual ,
+                        :Region ;
+               :NomRegion "Boucle du Mouhoun"^^rdfs:Literal ;
+               rdfs:label "BoucleMouhoun"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BrukinaFaso10
+:BrukinaFaso10 rdf:type owl:NamedIndividual ,
+                        :Puissance ;
+               :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+               :PuissanceEnMW 807.4 ;
+               rdfs:label "BF10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BrukinaFaso11
+:BrukinaFaso11 rdf:type owl:NamedIndividual ,
+                        :Puissance ;
+               :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+               :PuissanceEnMW 846.7 ;
+               rdfs:label "BF11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BrukinaFaso12
+:BrukinaFaso12 rdf:type owl:NamedIndividual ,
+                        :Puissance ;
+               :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+               :PuissanceEnMW 930.3 ;
+               rdfs:label "BF12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BrukinaFaso13
+:BrukinaFaso13 rdf:type owl:NamedIndividual ,
+                        :Puissance ;
+               :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+               :PuissanceEnMW 983.4 ;
+               rdfs:label "BF13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BrukinaFaso14
+:BrukinaFaso14 rdf:type owl:NamedIndividual ,
+                        :Puissance ;
+               :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+               :PuissanceEnMW 1050.2 ;
+               rdfs:label "BF14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BrukinaFaso15
+:BrukinaFaso15 rdf:type owl:NamedIndividual ,
+                        :Puissance ;
+               :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+               :PuissanceEnMW 1121.1 ;
+               rdfs:label "BF15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BrukinaFaso16
+:BrukinaFaso16 rdf:type owl:NamedIndividual ,
+                        :Puissance ;
+               :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+               :PuissanceEnMW 1135.2 ;
+               rdfs:label "BF16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#BrukinaFaso17
+:BrukinaFaso17 rdf:type owl:NamedIndividual ,
+                        :Puissance ;
+               :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+               :PuissanceEnMW 1321.7 ;
+               rdfs:label "BF17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CE10
+:CE10 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+      :aPourRegion :CentreEst ;
+      :PuissanceEnMW 30.1 ;
+      rdfs:label "CE10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CE11
+:CE11 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+      :aPourRegion :CentreEst ;
+      :PuissanceEnMW 32.6 ;
+      rdfs:label "CE11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CE12
+:CE12 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+      :aPourRegion :CentreEst ;
+      :PuissanceEnMW 35.6 ;
+      rdfs:label "CE12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CE13
+:CE13 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+      :aPourRegion :CentreEst ;
+      :PuissanceEnMW 38.2 ;
+      rdfs:label "CE13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CE14
+:CE14 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+      :aPourRegion :CentreEst ;
+      :PuissanceEnMW 40.9 ;
+      rdfs:label "CE14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CE15
+:CE15 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+      :aPourRegion :CentreEst ;
+      :PuissanceEnMW 44.8 ;
+      rdfs:label "CE15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CE16
+:CE16 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+      :aPourRegion :CentreEst ;
+      :PuissanceEnMW 46.6 ;
+      rdfs:label "CE16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CE17
+:CE17 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+      :aPourRegion :CentreEst ;
+      :PuissanceEnMW 51.3 ;
+      rdfs:label "CE17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CN10
+:CN10 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+      :aPourRegion :CentreNord ;
+      :PuissanceEnMW 16.7 ;
+      rdfs:label "CN10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CN11
+:CN11 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+      :aPourRegion :CentreNord ;
+      :PuissanceEnMW 14.7 ;
+      rdfs:label "CN11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CN12
+:CN12 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+      :aPourRegion :CentreNord ;
+      :PuissanceEnMW 16.6 ;
+      rdfs:label "CN12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CN13
+:CN13 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+      :aPourRegion :CentreNord ;
+      :PuissanceEnMW 19.6 ;
+      rdfs:label "CN13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CN14
+:CN14 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+      :aPourRegion :CentreNord ;
+      :PuissanceEnMW 21.2 ;
+      rdfs:label "CN14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CN15
+:CN15 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+      :aPourRegion :CentreNord ;
+      :PuissanceEnMW 23.5 ;
+      rdfs:label "CN15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CN16
+:CN16 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+      :aPourRegion :CentreNord ;
+      :PuissanceEnMW 24.7 ;
+      rdfs:label "CN16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CN17
+:CN17 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+      :aPourRegion :CentreNord ;
+      :PuissanceEnMW 28.6 ;
+      rdfs:label "CN17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CO10
+:CO10 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+      :aPourRegion :CentreOuest ;
+      :PuissanceEnMW 29.9 ;
+      rdfs:label "CO10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CO11
+:CO11 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+      :aPourRegion :CentreOuest ;
+      :PuissanceEnMW 31.5 ;
+      rdfs:label "CO11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CO12
+:CO12 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+      :aPourRegion :CentreOuest ;
+      :PuissanceEnMW 34.6 ;
+      rdfs:label "CO12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CO13
+:CO13 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+      :aPourRegion :CentreOuest ;
+      :PuissanceEnMW 29.7 ;
+      rdfs:label "CO13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CO14
+:CO14 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+      :aPourRegion :CentreOuest ;
+      :PuissanceEnMW 31.8 ;
+      rdfs:label "CO14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CO15
+:CO15 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+      :aPourRegion :CentreOuest ;
+      :PuissanceEnMW 34.2 ;
+      rdfs:label "CO15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CO16
+:CO16 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+      :aPourRegion :CentreOuest ;
+      :PuissanceEnMW 36 ;
+      rdfs:label "CO16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CO17
+:CO17 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+      :aPourRegion :CentreOuest ;
+      :PuissanceEnMW 38.6 ;
+      rdfs:label "CO17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CS10
+:CS10 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+      :aPourRegion :CentreSud ;
+      :PuissanceEnMW 8.9 ;
+      rdfs:label "CS10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CS11
+:CS11 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+      :aPourRegion :CentreSud ;
+      :PuissanceEnMW 9.3 ;
+      rdfs:label "CS11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CS12
+:CS12 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+      :aPourRegion :CentreSud ;
+      :PuissanceEnMW 9.8 ;
+      rdfs:label "CS12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CS13
+:CS13 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+      :aPourRegion :CentreSud ;
+      :PuissanceEnMW 10.6 ;
+      rdfs:label "CS13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CS14
+:CS14 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+      :aPourRegion :CentreSud ;
+      :PuissanceEnMW 11.9 ;
+      rdfs:label "CS14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CS15
+:CS15 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+      :aPourRegion :CentreSud ;
+      :PuissanceEnMW 12.8 ;
+      rdfs:label "CS15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CS16
+:CS16 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+      :aPourRegion :CentreSud ;
+      :PuissanceEnMW 15 ;
+      rdfs:label "CS16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CS17
+:CS17 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+      :aPourRegion :CentreSud ;
+      :PuissanceEnMW 16.6 ;
+      rdfs:label "CS17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Cas10
+:Cas10 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+       :aPourRegion :Cascades ;
+       :PuissanceEnMW 19.5 ;
+       rdfs:label "Cas10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Cas11
+:Cas11 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+       :aPourRegion :Cascades ;
+       :PuissanceEnMW 17.5 ;
+       rdfs:label "Cas11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Cas12
+:Cas12 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+       :aPourRegion :Cascades ;
+       :PuissanceEnMW 20.9 ;
+       rdfs:label "Cas12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Cas13
+:Cas13 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+       :PuissanceEnMW 22.4 ;
+       rdfs:label "Cas13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Cas14
+:Cas14 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+       :aPourRegion :Cascades ;
+       :PuissanceEnMW 24.4 ;
+       rdfs:label "Cas14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Cas15
+:Cas15 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+       :aPourRegion :Cascades ;
+       :PuissanceEnMW 26.4 ;
+       rdfs:label "Cas15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Cas16
+:Cas16 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+       :PuissanceEnMW 28.4 ;
+       rdfs:label "Cas16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Cas17
+:Cas17 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+       :aPourRegion :Cascades ;
+       :PuissanceEnMW 38.4 ;
+       rdfs:label "Cas17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Cascades
+:Cascades rdf:type owl:NamedIndividual ,
+                   :Region ;
+          :NomRegion "Cascades"^^rdfs:Literal ;
+          rdfs:label "Cascades"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Centre
+:Centre rdf:type owl:NamedIndividual ,
+                 :Region ;
+        :NomRegion "Centre"^^rdfs:Literal ;
+        rdfs:label "Centre"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Centre10
+:Centre10 rdf:type owl:NamedIndividual ,
+                   :Puissance ;
+          :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+          :aPourRegion :Centre ;
+          :PuissanceEnMW 420.1 ;
+          rdfs:label "Cent10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Centre11
+:Centre11 rdf:type owl:NamedIndividual ,
+                   :Puissance ;
+          :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+          :aPourRegion :Centre ;
+          :PuissanceEnMW 450.9 ;
+          rdfs:label "Cent11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Centre12
+:Centre12 rdf:type owl:NamedIndividual ,
+                   :Puissance ;
+          :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+          :aPourRegion :Centre ;
+          :PuissanceEnMW 501.2 ;
+          rdfs:label "Cent12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Centre13
+:Centre13 rdf:type owl:NamedIndividual ,
+                   :Puissance ;
+          :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+          :aPourRegion :Centre ;
+          :PuissanceEnMW 532.9 ;
+          rdfs:label "Cent13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Centre14
+:Centre14 rdf:type owl:NamedIndividual ,
+                   :Puissance ;
+          :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+          :aPourRegion :Centre ;
+          :PuissanceEnMW 565.5 ;
+          rdfs:label "Cent14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Centre15
+:Centre15 rdf:type owl:NamedIndividual ,
+                   :Puissance ;
+          :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+          :aPourRegion :Centre ;
+          :PuissanceEnMW 595.4 ;
+          rdfs:label "Cent15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Centre16
+:Centre16 rdf:type owl:NamedIndividual ,
+                   :Puissance ;
+          :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+          :aPourRegion :Centre ;
+          :PuissanceEnMW 575.7 ;
+          rdfs:label "Cent16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Centre17
+:Centre17 rdf:type owl:NamedIndividual ,
+                   :Puissance ;
+          :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+          :aPourRegion :Centre ;
+          :PuissanceEnMW 709.2 ;
+          rdfs:label "Cent17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CentreEst
+:CentreEst rdf:type owl:NamedIndividual ,
+                    :Region ;
+           :NomRegion "Centre-Est"^^rdfs:Literal ;
+           rdfs:label "CentreEst"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CentreNord
+:CentreNord rdf:type owl:NamedIndividual ,
+                     :Region ;
+            :NomRegion "Centre-Nord"^^rdfs:Literal ;
+            rdfs:label "CentreNord"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CentreOuest
+:CentreOuest rdf:type owl:NamedIndividual ,
+                      :Region ;
+             :NomRegion "Centre-Ouest"^^rdfs:Literal ;
+             rdfs:label "CentreOuest"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#CentreSud
+:CentreSud rdf:type owl:NamedIndividual ,
+                    :Region ;
+           :NomRegion "Centre-Sud"^^rdfs:Literal ;
+           rdfs:label "CentreSud"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Est
+:Est rdf:type owl:NamedIndividual ,
+              :Region ;
+     :NomRegion "Est"^^rdfs:Literal ;
+     rdfs:label "Est"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Est10
+:Est10 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+       :aPourRegion :Est ;
+       :PuissanceEnMW 27.2 ;
+       rdfs:label "Est10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Est11
+:Est11 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+       :aPourRegion :Est ;
+       :PuissanceEnMW 19.1 ;
+       rdfs:label "Est11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Est12
+:Est12 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+       :aPourRegion :Est ;
+       :PuissanceEnMW 19.7 ;
+       rdfs:label "Est12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Est13
+:Est13 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+       :aPourRegion :Est ;
+       :PuissanceEnMW 22.3 ;
+       rdfs:label "Est13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Est14
+:Est14 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+       :aPourRegion :Est ;
+       :PuissanceEnMW 24.8 ;
+       rdfs:label "Est14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Est15
+:Est15 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+       :aPourRegion :Est ;
+       :PuissanceEnMW 25.4 ;
+       rdfs:label "Est15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Est16
+:Est16 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+       :aPourRegion :Est ;
+       :PuissanceEnMW 26.9 ;
+       rdfs:label "Est16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Est17
+:Est17 rdf:type owl:NamedIndividual ,
+                :Puissance ;
+       :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+       :aPourRegion :Est ;
+       :PuissanceEnMW 30.1 ;
+       rdfs:label "Est17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#HB10
+:HB10 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+      :aPourRegion :HautsBassins ;
+      :PuissanceEnMW 178.3 ;
+      rdfs:label "HB10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#HB11
+:HB11 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+      :aPourRegion :HautsBassins ;
+      :PuissanceEnMW 186.5 ;
+      rdfs:label "HB11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#HB12
+:HB12 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+      :aPourRegion :HautsBassins ;
+      :PuissanceEnMW 200 ;
+      rdfs:label "HB12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#HB13
+:HB13 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+      :aPourRegion :HautsBassins ;
+      :PuissanceEnMW 205.7 ;
+      rdfs:label "HB13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#HB14
+:HB14 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+      :aPourRegion :HautsBassins ;
+      :PuissanceEnMW 219.5 ;
+      rdfs:label "HB14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#HB15
+:HB15 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+      :aPourRegion :HautsBassins ;
+      :PuissanceEnMW 232.8 ;
+      rdfs:label "HB15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#HB16
+:HB16 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+      :aPourRegion :HautsBassins ;
+      :PuissanceEnMW 241.6 ;
+      rdfs:label "HB16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#HB17
+:HB17 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+      :aPourRegion :HautsBassins ;
+      :PuissanceEnMW 253.8 ;
+      rdfs:label "HB17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#HautsBassins
+:HautsBassins rdf:type owl:NamedIndividual ,
+                       :Region ;
+              :NomRegion "Hauts-Bassins"^^rdfs:Literal ;
+              rdfs:label "HautsBassins"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Nord
+:Nord rdf:type owl:NamedIndividual ,
+               :Region ;
+      :NomRegion "Nord"^^rdfs:Literal ;
+      rdfs:label "Nord"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Nord10
+:Nord10 rdf:type owl:NamedIndividual ,
+                 :Puissance ;
+        :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+        :aPourRegion :Nord ;
+        :PuissanceEnMW 23.3 ;
+        rdfs:label "N10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Nord11
+:Nord11 rdf:type owl:NamedIndividual ,
+                 :Puissance ;
+        :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+        :aPourRegion :Nord ;
+        :PuissanceEnMW 23 ;
+        rdfs:label "N11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Nord12
+:Nord12 rdf:type owl:NamedIndividual ,
+                 :Puissance ;
+        :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+        :aPourRegion :Nord ;
+        :PuissanceEnMW 23.8 ;
+        rdfs:label "N12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Nord13
+:Nord13 rdf:type owl:NamedIndividual ,
+                 :Puissance ;
+        :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+        :aPourRegion :Nord ;
+        :PuissanceEnMW 26.6 ;
+        rdfs:label "N13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Nord14
+:Nord14 rdf:type owl:NamedIndividual ,
+                 :Puissance ;
+        :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+        :aPourRegion :Nord ;
+        :PuissanceEnMW 28.6 ;
+        rdfs:label "N14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Nord15
+:Nord15 rdf:type owl:NamedIndividual ,
+                 :Puissance ;
+        :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+        :aPourRegion :Nord ;
+        :PuissanceEnMW 31.5 ;
+        rdfs:label "N15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Nord16
+:Nord16 rdf:type owl:NamedIndividual ,
+                 :Puissance ;
+        :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+        :aPourRegion :Nord ;
+        :PuissanceEnMW 34.4 ;
+        rdfs:label "N16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Nord17
+:Nord17 rdf:type owl:NamedIndividual ,
+                 :Puissance ;
+        :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+        :aPourRegion :Nord ;
+        :PuissanceEnMW 37.4 ;
+        rdfs:label "N17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#PC10
+:PC10 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+      :aPourRegion :PlateauCentral ;
+      :PuissanceEnMW 9.9 ;
+      rdfs:label "PC10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#PC11
+:PC11 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+      :aPourRegion :PlateauCentral ;
+      :PuissanceEnMW 10.9 ;
+      rdfs:label "PC11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#PC12
+:PC12 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+      :aPourRegion :PlateauCentral ;
+      :PuissanceEnMW 13 ;
+      rdfs:label "PC12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#PC13
+:PC13 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+      :aPourRegion :PlateauCentral ;
+      :PuissanceEnMW 14.4 ;
+      rdfs:label "PC13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#PC14
+:PC14 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+      :aPourRegion :PlateauCentral ;
+      :PuissanceEnMW 15.1 ;
+      rdfs:label "PC14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#PC15
+:PC15 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+      :aPourRegion :PlateauCentral ;
+      :PuissanceEnMW 16.1 ;
+      rdfs:label "PC15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#PC16
+:PC16 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+      :aPourRegion :PlateauCentral ;
+      :PuissanceEnMW 18.3 ;
+      rdfs:label "PC16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#PC17
+:PC17 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+      :aPourRegion :PlateauCentral ;
+      :PuissanceEnMW 21 ;
+      rdfs:label "PC17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#PlateauCentral
+:PlateauCentral rdf:type owl:NamedIndividual ,
+                         :Region ;
+                :NomRegion "Plateau central"^^rdfs:Literal ;
+                rdfs:label "PlateauCentrale"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#SO10
+:SO10 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+      :aPourRegion :SudOuest ;
+      :PuissanceEnMW 10.9 ;
+      rdfs:label "SO10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#SO11
+:SO11 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+      :aPourRegion :SudOuest ;
+      :PuissanceEnMW 12.1 ;
+      rdfs:label "SO11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#SO12
+:SO12 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+      :aPourRegion :SudOuest ;
+      :PuissanceEnMW 12.5 ;
+      rdfs:label "SO12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#SO13
+:SO13 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+      :aPourRegion :SudOuest ;
+      :PuissanceEnMW 13.6 ;
+      rdfs:label "SO13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#SO14
+:SO14 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+      :aPourRegion :SudOuest ;
+      :PuissanceEnMW 14.3 ;
+      rdfs:label "SO14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#SO15
+:SO15 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+      :aPourRegion :SudOuest ;
+      :PuissanceEnMW 15.1 ;
+      rdfs:label "SO15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#SO16
+:SO16 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+      :aPourRegion :SudOuest ;
+      :PuissanceEnMW 23.5 ;
+      rdfs:label "SO16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#SO17
+:SO17 rdf:type owl:NamedIndividual ,
+               :Puissance ;
+      :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+      :aPourRegion :SudOuest ;
+      :PuissanceEnMW 26.4 ;
+      rdfs:label "SO17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Sahel
+:Sahel rdf:type owl:NamedIndividual ,
+                :Region ;
+       :NomRegion "Sahel"^^rdfs:Literal ;
+       rdfs:label "Sahel"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Sahel10
+:Sahel10 rdf:type owl:NamedIndividual ,
+                  :Puissance ;
+         :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> ;
+         :aPourRegion :Sahel ;
+         :PuissanceEnMW 12.6 ;
+         rdfs:label "Sa10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Sahel11
+:Sahel11 rdf:type owl:NamedIndividual ,
+                  :Puissance ;
+         :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> ;
+         :aPourRegion :Sahel ;
+         :PuissanceEnMW 13.9 ;
+         rdfs:label "Sa11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Sahel12
+:Sahel12 rdf:type owl:NamedIndividual ,
+                  :Puissance ;
+         :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> ;
+         :aPourRegion :Sahel ;
+         :PuissanceEnMW 14.6 ;
+         rdfs:label "Sa12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Sahel13
+:Sahel13 rdf:type owl:NamedIndividual ,
+                  :Puissance ;
+         :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> ;
+         :aPourRegion :Sahel ;
+         :PuissanceEnMW 16.9 ;
+         rdfs:label "Sa13"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Sahel14
+:Sahel14 rdf:type owl:NamedIndividual ,
+                  :Puissance ;
+         :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> ;
+         :aPourRegion :Sahel ;
+         :PuissanceEnMW 18.5 ;
+         rdfs:label "Sa14"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Sahel15
+:Sahel15 rdf:type owl:NamedIndividual ,
+                  :Puissance ;
+         :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> ;
+         :aPourRegion :Sahel ;
+         :PuissanceEnMW 24.4 ;
+         rdfs:label "Sa15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Sahel16
+:Sahel16 rdf:type owl:NamedIndividual ,
+                  :Puissance ;
+         :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> ;
+         :aPourRegion :Sahel ;
+         :PuissanceEnMW 22.1 ;
+         rdfs:label "Sa16"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#Sahel17
+:Sahel17 rdf:type owl:NamedIndividual ,
+                  :Puissance ;
+         :aPourAnnee <http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> ;
+         :aPourRegion :Sahel ;
+         :PuissanceEnMW 16.6 ;
+         rdfs:label "Sa17"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#SudOuest
+:SudOuest rdf:type owl:NamedIndividual ,
+                   :Region ;
+          :NomRegion "Sud-Ouest"^^rdfs:Literal ;
+          rdfs:label "SudOuest"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010
+<http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2010> rdf:type owl:NamedIndividual ,
+                                                                         :Annee ;
+                                                                :valeurAnnee 2010 ;
+                                                                rdfs:label "2010"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011
+<http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2011> rdf:type owl:NamedIndividual ,
+                                                                         :Annee ;
+                                                                :valeurAnnee 2011 ;
+                                                                rdfs:label "2011"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012
+<http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2012> rdf:type owl:NamedIndividual ,
+                                                                         :Annee ;
+                                                                :valeurAnnee 2012 ;
+                                                                rdfs:label "2012"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013
+<http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2013> rdf:type owl:NamedIndividual ,
+                                                                         :Annee ;
+                                                                :valeurAnnee 2013 ;
+                                                                rdfs:label "2013"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014
+<http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2014> rdf:type owl:NamedIndividual ,
+                                                                         :Annee ;
+                                                                :valeurAnnee 2014 ;
+                                                                rdfs:label "2014"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015
+<http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2015> rdf:type owl:NamedIndividual ,
+                                                                         :Annee ;
+                                                                :valeurAnnee 2015 ;
+                                                                rdfs:label "2015"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016
+<http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2016> rdf:type owl:NamedIndividual ,
+                                                                         :Annee ;
+                                                                :valeurAnnee 2016 ;
+                                                                rdfs:label "2016"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017
+<http://www.semanticweb.org/ozias/pnpdo/PuisanceEngRegion#2017> rdf:type owl:NamedIndividual ,
+                                                                         :Annee ;
+                                                                :valeurAnnee 2017 ;
+                                                                rdfs:label "2017"@fr .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :NomRegion
+                :PuissanceEnMW
+                :valeurAnnee
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

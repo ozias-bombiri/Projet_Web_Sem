@@ -1,0 +1,226 @@
+@prefix : <http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne> .
+
+<http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#pourAnnee
+:pourAnnee rdf:type owl:ObjectProperty ;
+           rdfs:domain :NombrePointDEau ;
+           rdfs:range :Annee ;
+           rdfs:label "pourAnnee"@fr .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#nbPointDeau
+:nbPointDeau rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :NombrePointDEau ;
+             rdfs:range xsd:integer ;
+             owl:propertyDisjointWith :valeurAnnee ;
+             rdfs:label "nbPointDeau"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#valeurAnnee
+:valeurAnnee rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain owl:Thing ;
+             rdfs:range xsd:integer ;
+             rdfs:label "valeurAnnee"@fr .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#Annee
+:Annee rdf:type owl:Class ;
+       rdfs:label "Annee"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#NombrePointDEau
+:NombrePointDEau rdf:type owl:Class ;
+                 rdfs:label "NombrePointDEau"@fr .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#PEM2004
+:PEM2004 rdf:type owl:NamedIndividual ,
+                    :NombrePointDEau ;
+           :pourAnnee <http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2004> ;
+           :nbPointDeau 35525 ;
+           rdfs:label "PEM04"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#PEM2005
+:PEM2005 rdf:type owl:NamedIndividual ,
+                    :NombrePointDEau ;
+           :pourAnnee <http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2005> ;
+           :nbPointDeau 48488 ;
+           rdfs:label "PEM05"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#PEM2006
+:PEM2006 rdf:type owl:NamedIndividual ,
+                    :NombrePointDEau ;
+           :pourAnnee <http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2006> ;
+           :nbPointDeau 51522 ;
+           rdfs:label "PEM06"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#PEM2007
+:PEM2007 rdf:type owl:NamedIndividual ,
+                    :NombrePointDEau ;
+           :pourAnnee <http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2007> ;
+           :nbPointDeau 53628 ;
+           rdfs:label "PEM07"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#PEM2008
+:PEM2008 rdf:type owl:NamedIndividual ,
+                    :NombrePointDEau ;
+           :pourAnnee <http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2008> ;
+           :nbPointDeau 56933 ;
+           rdfs:label "PEM08"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#PEM2009
+:PEM2009 rdf:type owl:NamedIndividual ,
+                    :NombrePointDEau ;
+           :pourAnnee <http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2009> ;
+           :nbPointDeau 59166 ;
+           rdfs:label "PEM09"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#PEM2010
+:PEM2010 rdf:type owl:NamedIndividual ,
+                    :NombrePointDEau ;
+           :pourAnnee <http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2010> ;
+           :nbPointDeau 61609 ;
+           rdfs:label "PEM10"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#PEM2011
+:PEM2011 rdf:type owl:NamedIndividual ,
+                    :NombrePointDEau ;
+           :pourAnnee <http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2011> ;
+           :nbPointDeau 64410 ;
+           rdfs:label "PEM11"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#PEM2012
+:PEM2012 rdf:type owl:NamedIndividual ,
+                    :NombrePointDEau ;
+           :pourAnnee <http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2012> ;
+           :nbPointDeau 51181 ;
+           rdfs:label "PEM12"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#PEM2015
+:PEM2015 rdf:type owl:NamedIndividual ,
+                    :NombrePointDEau ;
+           :pourAnnee <http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2015> ;
+           :nbPointDeau 56598 ;
+           rdfs:label "PEM15"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2004
+<http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2004> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2004 ;
+                                                               rdfs:label "2004"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2005
+<http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2005> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2005 ;
+                                                               rdfs:label "2005"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2006
+<http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2006> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2006 ;
+                                                               rdfs:label "2006"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2007
+<http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2007> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2007 ;
+                                                               rdfs:label "2007"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2008
+<http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2008> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2008 ;
+                                                               rdfs:label "2008"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2009
+<http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2009> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2009 ;
+                                                               rdfs:label "2009"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2010
+<http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2010> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2010 ;
+                                                               rdfs:label "2010"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2011
+<http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2011> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2011 ;
+                                                               rdfs:label "2011"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2012
+<http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2012> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2012 ;
+                                                               rdfs:label "2012"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2013
+<http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2013> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2013 ;
+                                                               rdfs:label "2013"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2014
+<http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2014> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2014 ;
+                                                               rdfs:label "2014"@fr .
+
+
+###  http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2015
+<http://www.semanticweb.org/ozias/pnpdo/PointDeauModerne#2015> rdf:type owl:NamedIndividual ,
+                                                                        :Annee ;
+                                                               :valeurAnnee 2015 ;
+                                                               rdfs:label "2015"@fr .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
